@@ -84,6 +84,11 @@ body,
             color: $main-color;
             font-size: 18px;
         }
+
+        .join {
+            color: #36C3FE;
+            font-weight: bold;
+        }
     }
 }
 
@@ -158,6 +163,7 @@ body,
         &__item {
             height: 260px;
             width: 33.33%;
+            cursor: pointer;
         }
 
         .one {
@@ -199,12 +205,17 @@ body,
             text-decoration: none;
             text-align: center;
 
-            &:hover {}
+            &:hover img {
+                width: 64px;
+                height: 44px;
+                box-shadow: 10px 10px 43px -7px rgba(0,0,0,0.5);
+            }
         }
 
         &-img {
             width: 54px;
             height: 34px;
+            transition: all .4s;
         }
 
         &-text {
@@ -340,7 +351,7 @@ body,
         background: #fff;
         border-radius: 100%;
         transition: background-color .25s;
-        
+
         &:not(:last-child) {
             margin-right: 40px;
         }
@@ -368,13 +379,15 @@ body,
     }
 
     &-social {
-        i {
-            color: #ADABAB;
-            font-size: 30px;
-
+        a {
             &:not(:last-child) {
                 margin-right: 60px;
             }
+        }
+
+        i {
+            color: #ADABAB;
+            font-size: 30px;
         }
     }
 }

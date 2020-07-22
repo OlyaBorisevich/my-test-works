@@ -77,6 +77,9 @@ body,
       text-decoration: none;
       color: #3D3D3D;
       font-size: 18px; }
+    .header .navigation .join {
+      color: #36C3FE;
+      font-weight: bold; }
 
 .subheader {
   background: url("../img/bg-sub-header.jpg") center center/cover no-repeat;
@@ -123,7 +126,8 @@ body,
     margin-top: 45px; }
     .courses-block__item {
       height: 260px;
-      width: 33.33%; }
+      width: 33.33%;
+      cursor: pointer; }
     .courses-block .one {
       background: #6059F7; }
     .courses-block .two {
@@ -149,9 +153,16 @@ body,
     .language-block__item {
       text-decoration: none;
       text-align: center; }
+      .language-block__item:hover img {
+        width: 64px;
+        height: 44px;
+        -webkit-box-shadow: 10px 10px 43px -7px rgba(0, 0, 0, 0.5);
+                box-shadow: 10px 10px 43px -7px rgba(0, 0, 0, 0.5); }
     .language-block-img {
       width: 54px;
-      height: 34px; }
+      height: 34px;
+      -webkit-transition: all .4s;
+      transition: all .4s; }
     .language-block-text {
       margin-top: 30px;
       font-size: 30px; }
@@ -257,10 +268,10 @@ body,
   .footer-text {
     margin-right: 175px;
     font-size: 18px; }
+  .footer-social a:not(:last-child) {
+    margin-right: 60px; }
   .footer-social i {
     color: #ADABAB;
     font-size: 30px; }
-    .footer-social i:not(:last-child) {
-      margin-right: 60px; }
 
 /*# sourceMappingURL=style.css.map */
