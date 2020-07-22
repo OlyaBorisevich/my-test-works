@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoffeePlace</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/wi-feedback.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//api-maps.yandex.ru/2.1/?apikey=dc25143a-0ece-46b4-a055-17202f060b37&lang=ru_RU"></script>
+</head>
+
+<div id="toTop">Наверх</div>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <nav class="topnav" id="myTopnav">
+                <a href="#about-us">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#news">Новости</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#" id="menu" class="icon">&#9776;</a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <section id="slideshow">
+        <div class="slider1 owl-carousel">
+            <img src="img/coffee1.jpg" alt="Продукт 1">
+            <img src="img/coffee8.jpg" alt="Продукт 2">
+            <img src="img/coffee3.jpg" alt="Продукт 3">
+            <img src="img/coffee4.jpg" alt="Продукт 4">
+            <img src="img/coffee7.jpg" alt="Продукт 5">
+            <img src="img/coffee6.jpg" alt="Продукт 6">
+        </div>
+
+    </section>
+
+    <section id="about-us" class="black">
+        <div class="container">
+
+            <h2>О нас</h2><br>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 single-blog4">
+                    <div class="imgCenter">
+                        <img src="img/barista.png" alt="Бариста"><br>
+                    </div>
+                    <div class="text">
+                        <h3>Бариста</h3><br>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tenetur quibusdam laborum, libero corporis officia nulla odio molestias quia harum.</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 single-blog">
+                    <div class="imgCenter">
+                        <img src="img/admin.png" alt="Администратор"><br>
+                    </div>
+                    <div class="text">
+                        <h3>Администратор</h3><br>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quae officiis error commodi nostrum, iure quam aut amet voluptas possimus!</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 single-blog">
+                    <div class="imgCenter">
+                        <img src="img/meng.png" alt="Менеджер"><br>
+                    </div>
+                    <div class="text">
+                        <h3>Менеджер</h3><br>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rem ullam, ex incidunt necessitatibus ab vel inventore in quasi eos?</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 single-blog">
+                    <div class="imgCenter">
+                        <img src="img/seller.png" alt="Продавец"><br>
+                    </div>
+                    <div class="text">
+                        <h3>Продавец</h3><br>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nesciunt ab sunt beatae harum. Iusto mollitia asperiores nam, quidem delectus.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services fon" id="prices" ng-app="App" ng-controller="PriceCtrl">
+        <div class="container">
+
+            <h2>Услуги</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th ng-click="sortSet('name')">
+                            <span>Наименование</span>
+                        </th>
+                        <th ng-click="sortSet('price')">
+                            <span>Цена руб.</span>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="price in prices | orderBy:sortBy:sortRev">
+                        <td>
+                            <span>{{price.name}}</span>
+                        </td>
+
+                        <td>
+                            <span>{{price.price | currency}}</span>
+                        </td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </section>
+
+    <section id="news" class="black">
+        <div class="container">
+            <h2>Новости</h2>
+            <div class="owl-carousel slider2">
+                <div>
+                    <h2>24 июля — День рождения растворимого кофе</h2>
+                    <p>В 1901 году первый приемлемый растворимый кофе изобрел американский химик японского происхождения Сатори Като в Чикаго.<br>
+                        В 1906 году Джордж Констан Вашингтон, английский химик, живший в Гватемале, заметил осадок в виде пудры, который собирался в его серебряной кофеварке. После серии экспериментов он создал первое массовое производство растворимого кофе и в 1909 году вывел на рынок «Red E Coffee» — первый коммерчески выпускаемый растворимый кофе.<br>
+
+                        24 июля 1938 года появилась первая действительно широко распространенная марка растворимого кофе. Продукт быстро получил популярность в США после. Второй мировой войны и затем распространился по всему миру. Именно эту дату во всем мире принято считать днем рождения растворимого кофе.</p>
+                </div>
+                <div>
+                    <h2>Знакомство с зеленым кофе</h2>
+                    <p>Главной темой Экспо Кофе и Чай, прошедшем в Москве в Крокус Сити в октябре 2013 года стал зеленый кофе. Более пятидесяти экспертов в области чая и кофе собрались на выставке, чтобы поделиться своим опытом. Но даже среди гурманов мало кто может рассказать о таком, совсем непривычном нам всем кофе.<br>
+
+                        Начнем с основ. Зеленым кофе являются натуральные зерна, которые не подвергались обжарке, это полуфабрикат и основа для знакомого каждому из нас черного кофе. С научной точки зрения зеленый кофе отличается от черного большим количеством витаминов и антиоксидантов. Так же в необжаренном сыром кофе большое количество аминокислот и самое главное — хлорогеновая кислота. Она присутствует только в сыром кофе, так как при высокой температуре обжарки она разрушается. Если остановится на хлорогеновой кислоте подробнее, то можно сказать, что она способствует активному расщеплению и выведению жиров. Именно поэтому зеленый кофе стал основой кофе для похудания. При его употреблении усиливается до сорока семи процентов утилизация жиров, в сравнении с классическим кофе. Стоит отметить, однако, что обычный кофе усиливает похудение всего на 14 процентов. Конечно, в процессе похудания не стоит забывать об общей диете и спорте, тогда результат точно превзойдет все ваши ожидания!<br>
+
+                        На рынке кофе зеленый стоит значительно дороже черного. Единственным тому объяснением можно назвать растущую популярность. Далеко не во всех магазинах вы сможете встретить такой товар, но зеленый кофе можно заказать в Интернет — магазине или специализированном чайном бутике.<br>
+
+                        Употребление зеленого кофе повысит тонус Вашего организма и мозговую активность, он не противопоказан женщинам, ожидающим малыша, так как содержание кофеина в нем минимально.
+
+                    </p>
+
+                </div>
+                <div>
+                    <h2>Кофейный сорт Желтый бурбон</h2>
+
+                    <p>Это довольно уникальный сорт кофейных зерен, который не проходил абсолютно никаких процедур по скрещиванию. Данный сорт сохранился в своем изначальном виде, в таком, в каком его выращивали сотни лет назад, когда культура кофе ещё только зарождалась.<br>
+
+                        Ягоды сорта «Желтый Бурбон» имеют характерный желтый цвет. Кожура на них заметно тоньше, чем у иных сортов кофе. Именно благодаря ей солнечные лучи воздействуют с наибольшим эффектом на процесс созревания ягод и зерна, делая их по-особенному сладкими.<br>
+
+                        Произрастают кофейные деревья в Бразилии, где климатические условия на столько хороши, что позволяют использовать уникальную натуральную сушку ягод прямо на дереве. Такой способ позволяет сохранить все уникальные вкусовые и ароматические качества зерен данного сорта.<br>
+
+                        Кофе «Желтый Бурбон» имеет довольно яркий аромат, который напоминает нотки немного жареного хлеба, приятные сливочные тона во вкусе и приятное долгое послевкусие!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="fon">
+        <div class="container">
+
+            <h2>Галерея</h2>
+
+            <div class="slider3 owl-carousel">
+
+                <div class="row gallery">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <img src="img/coffee15.jpg" alt="" class="img-fluid">
+
+                            <img src="img/coffee16.jpg" alt="" class="img-fluid">
+
+                        </div>
+                        <div class="col-lg-8">
+                            <img src="img/coffee18.jpg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee11.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee13.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee12.jpg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row gallery">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <img src="img/coffee19.jpg" alt="" class="img-fluid">
+
+                            <img src="img/coffee20.jpg" alt="" class="img-fluid">
+
+                        </div>
+                        <div class="col-lg-8">
+                            <img src="img/coffee21.jpg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee22.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee23.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img src="img/coffee24.jpg" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts" class="black">
+        <div class="container">
+
+            <h2>Контакты</h2>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <div id="lp-map"></div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="fb1">
+                        <h2>Вы можете связаться с нами</h2>
+                        <p>Заполните контактные данные,<br> и мы свяжемся с вами в кратчайшие сроки:</p>
+                        <input type="text" maxlength="50" name="Имя" placeholder="Ваше Имя..." />
+                        <input type="tel" maxlength="50" name="Телефон" placeholder="Ваш Телефон..." required />
+                        <button>Перезвоните мне</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            @CoffePlace, 2019
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-locale_ru-by.js"></script>
+    <script src="js/wi-feedback.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

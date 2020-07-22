@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>e-stado</title>
+    <link rel="stylesheet" href="css/gilroy.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>    
+    <div class="header-img">
+        <img src="img/header/cloud-1.png" alt="">
+        <img src="img/header/cloud-2.png" alt="">
+        <img src="img/header/cloud-3.png" alt="">
+        <img src="img/header/cloud-4.png" alt="">
+        <div class="ellipse"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content flex jc-center ai-center">
+                <div class="header-content__logo">
+                    <img src="img/logo.png" alt="e-stado">
+                </div>
+                <div class="header-content__title">
+                    Система комплексного мониторинга<br>состояния молочных коров
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-information ta-center">
+        <div class="container">
+            <p class="before-title">Ответьте на 3 вопроса и узнайте</p>
+            <h1>Как <span>увеличить удой каждой коровы<br> до 15%</span> путем</h1>
+            <div class="information-block flex-sb-c">
+                <div class="information-block__item flex ai-center jc-center">
+                    <div class="inform-img">
+                        <img src="img/icon.png" alt="icon">
+                    </div>
+                    <div class="inform-text">
+                        <strong>Своевременного<br>определения половой охоты</strong><br>
+                        <p>особенно если она не заметна<br>по внешним признакам</p>
+                    </div>
+                </div>
+                <div class="information-block__item flex ai-center jc-center">
+                    <div class="inform-img">
+                        <img src="img/icon.png" alt="icon">
+                    </div>
+                    <div class="inform-text">
+                        <strong>Анализом состояния<br>здоровья коровы</strong><br>
+                        <p>при наблюдении за жвачкой, активностью и температурой тела</p>
+                    </div>
+                </div>
+                <div class="information-block__item flex ai-center jc-center">
+                    <div class="inform-img">
+                        <img src="img/icon.png" alt="icon">
+                    </div>
+                    <div class="inform-text">
+                        <strong>Выявление хромоты</strong><br>
+                        <p>предупреждением<br>и выявлением развития<br>хромоты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-main">
+        <div class="container">
+            <form action="#" method="post" class="question-block flex-cl">
+                <div class="progress-bar__block">
+                    <div class="progress-bar__line">
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="steps flex-sb-c">
+                        <div id="progress-step-1" class="active-bar"></div>
+                        <div id="progress-step-2"></div>
+                        <div id="progress-step-3"></div>
+                    </div>
+                </div>
+                <div class="question-block__content">
+                    <div class="content-item ta-center active" id="step-1">
+                        <p class="number">ВОПРОС 1</p>
+                        <h2>Сколько у вас <span>дойных<br>коров?</span></h2>
+                        <input type="text" id="count-cows" name="count_cows" placeholder="Например: 45"
+                               class="input-text" autocomplete="off" required>
+                        <div class="btn">
+                            <button id="btn-step-1">
+                                Далее <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-item ta-center" id="step-2">
+                        <p class="number">ВОПРОС 2</p>
+                        <h2>Сколько <span>молока в сутки вы доите?</span></h2>
+                        <input type="text" id="count-milk" name="count_milk" placeholder="Например: 12"
+                               class="input-text" autocomplete="off" required>
+                        <div class="btn">
+                            <button id="btn-step-2">
+                                Далее <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-item ta-center" id="step-3">
+                        <p class="number">ВОПРОС 3</p>
+                        <h2><span>Вы являетесь?</span></h2>
+                        <div class="input-choice flex-cl ai-center">
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="who_am_i" value="director" checked>
+                                <div class="radio flex ai-center jc-center">
+                                    <span class="active"></span>
+                                </div> Руководителем фермы
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="who_am_i" value="zootechnician">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                Зоотехником
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="who_am_i" value="veterinarian">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                Ветеренаром
+                            </label>
+                        </div>
+                        <div class="btn">
+                            <button id="btn-step-3">
+                                Далее <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-item ta-center" id="step-4">
+                        <h2><span>Куда прислать вам ответ?</span></h2>
+                        <div class="input-choice contact flex jc-center ai-b">
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="answer" value="phone" checked>
+                                <div class="radio flex ai-center jc-center">
+                                    <span class="active"></span>
+                                </div>
+                                По телефону
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="answer" value="email">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                E-mail
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="answer" value="viber">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                Viber
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="answer" value="telegram">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                Telegram
+                            </label>
+                            <label class="flex ai-center" for="">
+                                <input type="radio" name="answer" value="whatsaap">
+                                <div class="radio flex ai-center jc-center">
+                                    <span></span>
+                                </div>
+                                Whatsaap
+                            </label>
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-field__phone flex-cl">
+                                <label for="phone">Введите ваш номер телефона</label>
+                                <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__"
+                                       autocomplete="off">
+                            </div>
+                            <div class="input-field__email flex-cl">
+                                <label for="email">Введите ваш e-mail</label>
+                                <input type="text" id="email" name="email" placeholder="input@example.com"
+                                       autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button id="btn-send" type="submit">
+                                Отправить и получить ответ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="footer-img">
+                <img src="img/cow-left.png" alt="" class="footer-img__left">
+                <img src="img/bush-right.png" alt="" class="footer-img__right">
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
