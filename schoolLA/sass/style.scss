@@ -306,7 +306,7 @@ body,
     .owl-carousel .owl-nav button.owl-prev {
         left: 25px;
         background: url('../img/arrow.svg');
-        background-repeat: no-repeat;        
+        background-repeat: no-repeat;
     }
 
     .owl-carousel .owl-nav button.owl-next {
@@ -316,12 +316,39 @@ body,
         transform: rotate(180deg);
     }
 
-    /*.owl-carousel .owl-nav button.owl-prev i,
-    .owl-carousel .owl-nav button.owl-next i {
-        color: #fff;
-        font-size: 66px;
-        line-height: 40px;
-    }*/
+    .owl-dots {
+        position: absolute;
+        left: 0;
+        bottom: -105px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .owl-dots button.owl-dot {
+        display: inline-block;
+        padding: 0 10px !important;
+    }
+
+    .owl-dots button.owl-dot:focus {
+        outline: none;
+    }
+
+    .owl-dots button.owl-dot span {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: #fff;
+        border-radius: 100%;
+        transition: background-color .25s;
+        
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    .owl-dots button.owl-dot.active span {
+        background: #8C61FF;
+    }
 
     &-button {
         margin-top: 110px;
