@@ -1,0 +1,238 @@
+@media (max-width: 769px) {
+    .container {
+        max-width: 739px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        height: 45px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .header {
+        padding: 13px 0;
+
+        &-logo {
+            img {
+                width: 50px;
+                height: 54px;
+            }
+        }
+
+        .navigation {
+            li {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .subheader {
+        background: url('../img/bg-sub-header.jpg') center (center / cover) no-repeat;
+        padding: 50px 0;
+        height: 50vh;
+
+        &-content {
+            max-width: 325px;
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+            }
+
+            .subtitle {
+                max-width: 310px;
+                margin-top: 30px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .one-button {
+                margin-top: 60px;
+
+                .btn {
+                    width: 122px;
+                    font-size: 12px;
+                }
+
+                i {
+                    margin-left: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .advantages {
+        .container {
+            background: url('../img/bg-section-adv.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 750px;
+            height: 442px;
+            padding: 0px;
+        }
+    }
+
+    .video {
+        padding-top: 20px;
+
+        .subtitle {
+            margin: 0 auto;
+            margin-top: 35px;
+            font-size: 16px;
+            max-width: 600px;
+            line-height: 20px;
+        }
+
+        .block-video {
+            margin-top: 25px;
+        }
+    }
+
+    .courses {
+        margin-top: 35px;
+
+        &-block {
+            margin-top: 35px;
+
+            &__item {
+                height: 145px;
+            }
+
+            h3 {
+                margin-top: 15px;
+                font-size: 17px;
+            }
+
+            &-img {
+                margin-top: 15px;
+                width: 83px;
+                height: 75px;
+
+                img {
+                    width: 83px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    .language {
+        margin-top: 35px;
+        padding-bottom: 20px;
+
+        &-block {
+            margin-top: 50px;
+            padding-bottom: 15px;
+
+            &-img {
+                width: 30px;
+                height: 20px;
+                transition: all .4s;
+
+                img {
+                    width: 30px;
+                    height: 20px;
+                }
+            }
+
+            &-text {
+                margin-top: 15px;
+                font-size: 18px;
+            }
+        }
+
+        &-button {
+            margin-top: 30px;
+
+            .btn {
+                width: 160px;
+                font-size: 13px;
+                height: 43px;
+            }
+        }
+    }
+
+    .testimonials {
+        background: url('../img/bg-testimonials.jpg') center (center / cover) no-repeat;
+        padding-bottom: 30px;
+
+        .slide {
+            margin: 0 auto;
+            margin-top: 30px;
+
+            &-item {
+                height: 185px;
+                width: 540px;
+                padding: 25px 30px 0 25px;
+                background: rgba(255, 255, 255, .5);
+
+                &__img {
+                    margin-right: 45px;
+
+                    img {
+                        width: 111px;
+                        height: 114px;
+                    }
+                }
+
+                &__block {
+                    width: 350px;
+                }
+
+                &-text-block {
+                    h3 {
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+
+                    .star {
+                        i {
+                            color: #ADABAB;
+
+                            &.active {
+                                color: #6059F7;
+                            }
+                        }
+                    }
+                }
+
+                &-text {
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .owl-dots {
+            bottom: -55px;
+        }
+
+        &-button {
+            margin-top: 65px;
+
+            .btn {
+                width: 162px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer {
+        padding: 30px 0 30px;
+
+        &-text {
+            margin-right: 70px;
+            font-size: 14px;
+        }
+    }
+}

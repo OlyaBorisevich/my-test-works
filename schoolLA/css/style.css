@@ -208,6 +208,9 @@ body,
         color: #ADABAB; }
         .testimonials .slide-item-text-block .star i.active {
           color: #6059F7; }
+      .testimonials .slide-item-text {
+        margin-top: 25px;
+        font-size: 24px; }
   .testimonials .owl-carousel .owl-nav button.owl-prev,
   .testimonials .owl-carousel .owl-nav button.owl-next {
     position: absolute;
@@ -273,5 +276,151 @@ body,
   .footer-social i {
     color: #ADABAB;
     font-size: 30px; }
+
+@media (max-width: 769px) {
+  .container {
+    max-width: 739px;
+    margin: 0 auto; }
+
+  .btn {
+    height: 45px; }
+
+  .title {
+    font-size: 40px; }
+
+  .header {
+    padding: 13px 0; }
+    .header-logo img {
+      width: 50px;
+      height: 54px; }
+    .header .navigation li:not(:last-child) {
+      margin-right: 30px; }
+    .header .navigation a {
+      font-size: 14px; }
+
+  .subheader {
+    background: url("../img/bg-sub-header.jpg") center center/cover no-repeat;
+    padding: 50px 0;
+    height: 50vh; }
+    .subheader-content {
+      max-width: 325px; }
+      .subheader-content h1 {
+        font-weight: bold;
+        font-size: 40px; }
+      .subheader-content .subtitle {
+        max-width: 310px;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 20px; }
+      .subheader-content .one-button {
+        margin-top: 60px; }
+        .subheader-content .one-button .btn {
+          width: 122px;
+          font-size: 12px; }
+        .subheader-content .one-button i {
+          margin-left: 10px;
+          font-size: 10px; }
+
+  .advantages .container {
+    background: url("../img/bg-section-adv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 442px;
+    padding: 0px; }
+
+  .video {
+    padding-top: 20px; }
+    .video .subtitle {
+      margin: 0 auto;
+      margin-top: 35px;
+      font-size: 16px;
+      max-width: 600px;
+      line-height: 20px; }
+    .video .block-video {
+      margin-top: 25px; }
+
+  .courses {
+    margin-top: 35px; }
+    .courses-block {
+      margin-top: 35px; }
+      .courses-block__item {
+        height: 145px; }
+      .courses-block h3 {
+        margin-top: 15px;
+        font-size: 17px; }
+      .courses-block-img {
+        margin-top: 15px;
+        width: 83px;
+        height: 75px; }
+        .courses-block-img img {
+          width: 83px;
+          height: 75px; }
+
+  .language {
+    margin-top: 35px;
+    padding-bottom: 20px; }
+    .language-block {
+      margin-top: 50px;
+      padding-bottom: 15px; }
+      .language-block-img {
+        width: 30px;
+        height: 20px;
+        -webkit-transition: all .4s;
+        transition: all .4s; }
+        .language-block-img img {
+          width: 30px;
+          height: 20px; }
+      .language-block-text {
+        margin-top: 15px;
+        font-size: 18px; }
+    .language-button {
+      margin-top: 30px; }
+      .language-button .btn {
+        width: 160px;
+        font-size: 13px;
+        height: 43px; }
+
+  .testimonials {
+    background: url("../img/bg-testimonials.jpg") center center/cover no-repeat;
+    padding-bottom: 30px; }
+    .testimonials .slide {
+      margin: 0 auto;
+      margin-top: 30px; }
+      .testimonials .slide-item {
+        height: 185px;
+        width: 540px;
+        padding: 25px 30px 0 25px;
+        background: rgba(255, 255, 255, 0.5); }
+        .testimonials .slide-item__img {
+          margin-right: 45px; }
+          .testimonials .slide-item__img img {
+            width: 111px;
+            height: 114px; }
+        .testimonials .slide-item__block {
+          width: 350px; }
+        .testimonials .slide-item-text-block h3 {
+          font-weight: bold;
+          font-size: 14px; }
+        .testimonials .slide-item-text-block .star i {
+          color: #ADABAB; }
+          .testimonials .slide-item-text-block .star i.active {
+            color: #6059F7; }
+        .testimonials .slide-item-text {
+          margin-top: 15px;
+          font-size: 14px; }
+    .testimonials .owl-dots {
+      bottom: -55px; }
+    .testimonials-button {
+      margin-top: 65px; }
+      .testimonials-button .btn {
+        width: 162px;
+        font-size: 13px; }
+
+  .footer {
+    padding: 30px 0 30px; }
+    .footer-text {
+      margin-right: 70px;
+      font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
