@@ -70,9 +70,14 @@ body,
     width: 70px;
     height: 75px; }
   .header .navigation {
-    list-style-type: none; }
-    .header .navigation li:not(:last-child) {
-      margin-right: 50px; }
+    list-style-type: none;
+    height: 35px; }
+    .header .navigation li {
+      padding-bottom: 10px; }
+      .header .navigation li:not(:last-child) {
+        margin-right: 50px; }
+      .header .navigation li:hover {
+        border-bottom: 2px solid #36C3FE; }
     .header .navigation a {
       text-decoration: none;
       color: #3D3D3D;
@@ -125,7 +130,7 @@ body,
   .courses-block {
     margin-top: 45px; }
     .courses-block__item {
-      height: 260px;
+      height: 300px;
       width: 33.33%;
       cursor: pointer; }
     .courses-block .one {
@@ -148,16 +153,34 @@ body,
   padding-bottom: 65px; }
   .language-block {
     margin-top: 130px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ADABAB; }
+    position: relative;
+    /*border-bottom: 1px solid #ADABAB;*/ }
+    .language-block::after {
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background: #ADABAB;
+      position: absolute;
+      bottom: .5px;
+      left: 0;
+      z-index: 0; }
+    .language-block .container {
+      height: 131px; }
     .language-block__item {
       text-decoration: none;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 30px;
+      height: 131px; }
       .language-block__item:hover img {
         width: 64px;
         height: 44px;
         -webkit-box-shadow: 10px 10px 43px -7px rgba(0, 0, 0, 0.5);
                 box-shadow: 10px 10px 43px -7px rgba(0, 0, 0, 0.5); }
+      .language-block__item:hover {
+        border-bottom: 2px solid #36C3FE; }
     .language-block-img {
       width: 54px;
       height: 34px;

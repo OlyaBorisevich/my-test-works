@@ -72,10 +72,17 @@ body,
 
     .navigation {
         list-style-type: none;
+        height: 35px;
 
         li {
+            padding-bottom: 10px;
+            
             &:not(:last-child) {
                 margin-right: 50px;
+            }
+
+            &:hover {
+                border-bottom: 2px solid #36C3FE;
             }
         }
 
@@ -161,7 +168,7 @@ body,
         margin-top: 45px;
 
         &__item {
-            height: 260px;
+            height: 300px;
             width: 33.33%;
             cursor: pointer;
         }
@@ -198,17 +205,41 @@ body,
 
     &-block {
         margin-top: 130px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #ADABAB;
+        position: relative;
+        /*border-bottom: 1px solid #ADABAB;*/
+        
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 1px;
+            background: #ADABAB;
+            position: absolute;
+            bottom: .5px;
+            left: 0;
+            z-index: 0;
+        }
+        
+        .container {
+            height: 131px;
+        }
 
         &__item {
             text-decoration: none;
             text-align: center;
+            padding-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 30px;
+            height: 131px;
 
             &:hover img {
                 width: 64px;
                 height: 44px;
-                box-shadow: 10px 10px 43px -7px rgba(0,0,0,0.5);
+                box-shadow: 10px 10px 43px -7px rgba(0, 0, 0, 0.5);
+            }
+            
+            &:hover {
+                border-bottom: 2px solid #36C3FE;
             }
         }
 
@@ -289,7 +320,7 @@ body,
                     }
                 }
             }
-            
+
             &-text {
                 margin-top: 25px;
                 font-size: 24px;

@@ -3,7 +3,9 @@ $(document).ready(function () {
         items: 1,
         dots: true,
         nav: true,
-        navText: ['', '']
+        navText: ['', ''],
+        autoplayTimeout : 1000,
+        loop: true
     });    
 });
 
