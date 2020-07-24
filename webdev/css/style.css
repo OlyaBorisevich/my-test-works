@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background: #000;
+    display: flex;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
+}
+
+.header_logo {
+    color: #fff;
+    font-weight: 800px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-left: 15%;
+}
+
+nav {
+    margin-top: 60px;
+    margin-left: 35%;
+}
+
+.topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #fcac45;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .mainWelcome {
+    background: #000;
+    text-align: center;
+    padding: 200px 0 410px 0;
+}
+
+main .mainWelcome p {
+    color: #999;
+    font-size: 20px;
+}
+
+main .mainWelcome h1 {
+    color: #999;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+main .mainWelcome h1:after {
+    display: none;
+}
+
+.mycompany {
+    color: #fcac45;
+    font-weight: 900;
+}
+
+.wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+main .mainAbout {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.aboutRight {
+    margin-left: 175px;
+}
+
+.aboutRight h1 {
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.aboutRight h1:after {
+    display: none;
+}
+
+.aboutRight p {
+    margin: 30px 0 50px 0;
+    color: #ccc;
+}
+
+.aboutRight li {
+    background: url(dot.png) 0px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.mw-100 {
+    min-width: 100%;
+}
+
+.mainTeam {
+    background: #000;
+    text-align: center;
+    padding: 100px 0 165px 0;
+    color: #fff;
+}
+
+.mainTeam h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+/*.line {
+    width: 100px;
+    height: 3px;
+    background: #fcac45;
+    position: relative;
+    left: 47%;
+    margin-bottom: 85px;
+}*/
+
+.photo {
+    background: #d7d7d7;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.teamCards {
+    display: flex;
+}
+
+.card {
+    margin: 0 40px;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.position {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.aboutPosition {
+    font-size: 14px;
+}
+
+.servicesCards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.mainServices h1 {
+    text-align: center;
+    padding: 100px 0 30px 0;
+    font-size: 44px;
+}
+
+.mainServices p {
+    color: #6c6c6c;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.servicesCard h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.mainClients {
+    background: #000;
+    padding: 100px 0 205px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.mainClients h1 {
+    margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.clients img {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.mainWork {
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.mainWork h1 {
+    margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.mainWork p {
+    margin-bottom: 165px;
+    color: #6c6c6c;
+}
+
+.mainWork img:hover {
+    opacity: 0.9;
+}
+
+.mainWork img {
+    margin: 10px;
+}
+
+.mainTestimonials {
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 170px;
+}
+
+.mainTestimonials h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: 100;
+}
+
+.mainTestimonials .testimonials {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.contactForm {
+    padding: 100px 0 100px 0;
+}
+
+.contactForm h1,
+p {
+    text-align: center;
+}
+
+.contactForm h1 {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 44px;
+}
+
+.contactForm .base {
+    margin-bottom: 100px;
+}
+
+form p {
+    text-align: left;
+}
+
+.contactWrapper {
+    width: 755px;
+    margin: 0 auto;
+    color: #636363;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.red {
+    color: red;
+}
+
+.formInputs {
+    display: flex;
+}
+
+input:first-of-type {
+    margin-right: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 165px;
+}
+
+input,
+textarea {
+    border: 1px solid #999;
+    margin-top: 5px;
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: #fcac45;
+    color: #fff;
+    margin-right: 0;
+    margin-top: 25px;
+    border: 0px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #000;
+    padding: 30px 0 30px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    margin-left: 15px;
+}
+
+.social img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#toTop {
+    width: 100px;
+    border: 0;
+    background: #fcac45;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    /* отступ кнопки от нижнего края страницы*/
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    font-family: verdana;
+    font-size: 11px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 200;
+}
+
+@media screen and (max-width: 1500px) {
+    nav {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    nav {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        margin-top: -20px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    header .topnav.responsive {
+        height: 340px;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    main .mainWelcome {
+        padding: 50px 0 50px 0;
+    }
+
+    main .mainWelcome p {
+        font-size: 14px;
+    }
+
+    main .mainWelcome h1 {
+        font-size: 25px;
+    }
+
+    .mw-100 {
+        max-width: 100%;
+    }
+
+    .mainAbout {
+        flex-direction: column;
+    }
+
+    .aboutRight {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .aboutRight li {
+        text-align: left;
+    }
+
+    .aboutRight h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .teamCards {
+        flex-direction: column;
+    }
+
+    .servicesCards {
+        grid-template-columns: auto;
+    }   
+}
+
+@media screen and (max-width: 1780px) {
+     .line1 img:last-child {
+        display: none;
+    }
+
+    .line2 img:last-child {
+        display: none;
+    }
+
+    .line3 img:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+     .line1 img:not(:first-child) {
+        display: none;
+    }
+
+    .line2 img:not(:first-child) {
+        display: none;
+    }
+
+    .line3 img:not(:first-child) {
+        display: none;
+    }
+}
