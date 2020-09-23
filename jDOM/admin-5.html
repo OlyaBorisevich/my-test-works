@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jDOM</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/lato.css">
+    <link rel="stylesheet" href="style/select2.min.css">
+    <link rel="stylesheet" href="style/admin-5.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content flex jc-sb">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="jDOM">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list flex">
+                        <li class="nav-list__item">
+                            <a href="#" class="flex ai-c">
+                                <img src="img/admin-2/repairs-icon.svg" alt="Ремонты">Ремонты
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="flex ai-c active-link">
+                                <img src="img/admin-2/new-icon.svg" alt="Создать">Создать новый
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a shref="#" class="flex ai-c">
+                                <img src="img/admin-2/setting-icon.svg" alt="Настройки">Настройки
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="burger-menu">
+                        <span class="burger-menu__item"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <form action="" class="form-new-renovation flex fd-cl">
+                <div class="form-item flex fd-cl">
+                    <label for="#adress-renovation">Адрес ремонта</label>
+                    <input type="text" id="adress-renovation">
+                </div>
+                <div class="form-item flex jc-sb">
+                    <div class="flex fd-cl">
+                        <label for="#name">Имя</label>
+                        <input type="text" id="name" placeholder="Алексей">
+                    </div>
+                    <div class="flex fd-cl">
+                        <label for="#color-project">Цвет проекта</label>
+                        <select name="color" id=""></select>
+                    </div>
+                </div>
+                <div class="form-item flex jc-sb">
+                    <div class="flex fd-cl">
+                        <label for="#email">email</label>
+                        <input type="text" id="email" placeholder="kulbicki@gmail.com">
+                    </div>
+                    <div class="flex fd-cl">
+                        <label for="#phone">Телефон</label>
+                        <div class="phone flex jc-sb">
+                            <input type="text" id="phone" placeholder="+375 29 123-45-67">
+                            <button class="add-btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item form-btn flex jc-fl-end">
+                    <button class="btn btn-create">Создать</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="pras.by/ru" class="flex ai-c jc-fl-end">
+                <img src="img/logo_PRAS.svg" alt="PRAS">
+                Проект <span>компании PRAS</span>
+            </a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/admin-5.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jDOM</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/lato.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <div class="bg-left"></div>
+            <div class="bg-right"></div>
+        </div>
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.svg" alt="jDOM">
+            </div>
+        </header>
+        <main class="main">
+            <form action="" class="form flex fl-cl">
+                <label for="name">имя</label>
+                <input type="text" id="name" placeholder="Иван">
+                <div class="company flex">
+                    <label for="company">компания</label>
+                    <p>Пример: <span>ООО"Компания"</span></p>
+                </div>
+                <input type="text" id="company" placeholder='ООО"Компания"'>
+                <label for="email">e-mail</label>
+                <input type="text" id="email" placeholder="kulbicki@gmail.com">
+                <label for="password">пароль</label>
+                <input type="password" id="password" value="123">
+                <div class="form-btn">
+                    <button type="submit" class="form-btn__login btn left">
+                        <span class="login-desk">ВХОД</span><span class="login-mobile">ВОЙТИ</span>
+                    </button>
+                    <button type="button" class="form-btn__registration btn right">РЕГИСТРАЦИЯ</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <a href="pras.by/ru" class="flex ai-c jc-fl-end">
+                <img src="img/logo_PRAS.svg" alt="PRAS">
+                Проект <span>компании PRAS</span>
+            </a>
+        </footer>
+    </div>
+</body></html>

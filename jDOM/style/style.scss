@@ -1,0 +1,229 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+.flex {
+    display: flex;
+}
+
+.fl-cl {
+    flex-direction: column;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.jc-fl-end {
+    justify-content: flex-end;
+}
+
+.bg {
+    &-left {
+        background: linear-gradient(135deg, rgba(250, 205, 104, 1) 10%, rgba(255, 181, 51, 1) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 720px;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &-right {
+        background: linear-gradient(135deg, rgba(250, 205, 104, 1) 10%, rgba(255, 181, 51, 1) 100%);
+        position: absolute;
+        top: 0;
+        left: 720px;
+        width: calc(100% - 720px);
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.header {
+    pointer-events: none;
+    padding-top: 90px;
+
+    .logo {
+        margin-left: 195px;
+
+        img {
+            width: 683px;
+            height: 427px;
+        }
+    }
+}
+
+.main {
+    margin-top: -85px;
+
+    .form {
+        margin-bottom: 35px;
+        margin-left: 430px;
+
+        label {
+            opacity: 0.5;
+            font-size: 20px;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 429px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #fff;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 500;
+            font-style: italic;
+            color: #000;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+            border-radius: none;
+        }
+
+        .company {
+            align-items: baseline;
+
+            p {
+                opacity: .5;
+                font-size: 13px;
+                font-weight: 100;
+                color: #000;
+                margin-left: 203px;
+
+                span {
+                    font-style: italic;
+                }
+            }
+        }
+
+        &-btn {
+            margin-top: 25px;
+
+            .btn {
+                margin-left: -2px;
+                height: 55px;
+                border: 1px solid #000000;
+                border-radius: 27.5px;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .5s;
+            }
+
+            &__registration {
+                width: 250px;
+                margin-right: 20px;
+            }
+
+            &__login {
+                width: 163px;
+                margin-right: 20px;
+
+                .login-mobile {
+                    display: none;
+                }
+            }
+
+            .left {
+                background-color: transparent;
+                color: #000;
+
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            .right {
+                background-color: #000;
+                color: #fff;
+
+                &:hover {
+                    color: #ffb533;
+                }
+            }
+        }
+
+        .link {
+            margin-top: 35px;
+
+            .link-password {
+                font-size: 18px;
+                font-weight: 400;
+                color: #000;
+                transition: .3s;
+                border-bottom: 1px solid #000;
+                text-decoration: none;
+
+                &__mobile {
+                    display: none;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        .mobile-link {
+            margin-top: 0;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    img {
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+
+        span {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+@import 'media-style';

@@ -1,0 +1,405 @@
+@media (max-width: 1200px) {
+    .footer {
+        height: 50px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .bg {
+        &-left {
+            width: 520px;
+        }
+
+        &-right {
+            left: 520px;
+            width: calc(100% - 520px);
+        }
+    }
+
+    .header {
+        .logo {
+            margin-left: 70px;
+
+            img {
+                width: 616px;
+                height: 330px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: -60px;
+
+        .form {
+            margin-left: 295px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bg {
+        &-left {
+            width: 450px;
+        }
+
+        &-right {
+            left: 450px;
+            width: calc(100% - 450px);
+        }
+    }
+
+    .header {
+        .logo {
+            margin-left: 50px;
+
+            img {
+                width: 542px;
+                height: 300px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: -60px;
+
+        .form {
+            margin-left: 245px;
+
+            input {
+                width: 360px;
+            }
+
+            .company {
+                p {
+                    margin-left: 135px;
+                }
+            }
+
+            &-btn {
+                &__registration {
+                    width: 205px;
+                }
+
+                &__login {
+                    width: 140px;
+                }
+            }
+
+            .link-password {
+                margin-top: 35px;
+
+                &__mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .bg {
+        &-left {
+            width: 415px;
+        }
+
+        &-right {
+            left: 415px;
+            width: calc(100% - 415px);
+        }
+    }
+
+    .header {
+        padding-top: 75px;
+
+        .logo {
+            margin-left: 46px;
+
+            img {
+                width: 505px;
+                height: 270px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: -65px;
+
+        .form {
+            margin-left: 230px;
+
+            label {
+                font-size: 18px;
+            }
+
+            input {
+                width: 318px;
+                margin-bottom: 25px;
+                font-size: 18px;
+            }
+
+            .company {
+
+                p {
+                    margin-left: 90px;
+                }
+            }
+
+            &-btn {
+                margin-top: 0;
+
+                .btn {
+                    margin-left: 0;
+                    height: 38px;
+                    font-size: 12px;
+                }
+
+                &__registration {
+                    width: 160px;
+                }
+
+                &__login {
+                    width: 138px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .bg {
+        &-left {
+            width: 296px;
+        }
+
+        &-right {
+            left: 296px;
+            width: calc(100% - 296px);
+        }
+    }
+
+    .header {
+        .logo {
+
+            img {
+                width: 328px;
+                height: 200px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: -25px;
+
+        .form {
+            margin-left: 161px;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .main {
+        .form {
+            label {
+                font-size: 16px;
+            }
+
+            input {
+                width: 280px;
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+
+            .company {
+
+                p {
+                    margin-left: 60px;
+                }
+            }
+
+            &-btn {
+                display: flex;
+                flex-direction: column;
+
+                .btn {
+                    width: 280px;
+                    margin-bottom: 20px;
+                }
+
+                &__login {
+                    order: -1;
+
+                    .login-desk {
+                        display: none;
+                    }
+
+                    .login-mobile {
+                        display: block;
+                    }
+                }
+            }
+
+            .link {
+                align-self: baseline;
+
+                .link-password {
+                    &__mobile {
+                        margin-top: 0;
+                        display: block;
+                        font-size: 13px;
+                        font-weight: 400;
+                        margin-bottom: 25px;
+                        border-bottom: none;
+                        text-decoration: underline;
+                    }
+                }
+
+                .link-password__desk {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .bg {
+        &-left {
+            width: 248px;
+        }
+
+        &-right {
+            left: 248px;
+            width: calc(100% - 248px);
+        }
+    }
+
+    .header {
+        padding-top: 50px;
+
+        .logo {
+            margin-left: 30px;
+
+            img {
+                width: 285px;
+                height: 175px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: -25px;
+
+        .form {
+            margin-left: 129px;
+
+            label {
+                font-size: 15px;
+            }
+
+            input {
+                width: 250px;
+                margin-bottom: 25px;
+                font-size: 15px;
+            }
+
+            .company {
+
+                p {
+                    margin-left: 40px;
+                }
+            }
+
+            &-btn {
+                .btn {
+                    width: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .bg {
+        &-left {
+            width: 258px;
+        }
+
+        &-right {
+            left: 258px;
+            width: calc(100% - 258px);
+        }
+    }
+
+    .header {
+        padding-top: 38px;
+
+        .logo {
+            margin-left: 15px;
+
+            img {
+                width: 131px;
+                height: 83px;
+            }
+        }
+    }
+
+    .main {
+        margin-top: 5px;
+
+        .form {
+            margin-left: 60px;
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                width: 238px;
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+
+            .company {
+                p {
+                    font-size: 13px;
+                    margin-left: 35px;
+                }
+            }
+
+            &-btn {
+                margin-top: 0;
+
+                .btn {
+                    height: 38px;
+                    font-size: 12px;
+                    width: 238px;
+                }
+
+                &__registration {
+                    margin-right: 0;
+                }
+
+                &__login {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        right: 30px;
+        bottom: 30px;
+
+        img {
+            width: 58px;
+            height: 12px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+    }
+}

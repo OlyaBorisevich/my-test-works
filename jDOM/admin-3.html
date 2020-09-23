@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jDOM</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/admin-3.css">
+    <link rel="stylesheet" href="style/lato.css">
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup-content">
+            <div class="popup-text">Сдвинуть последующие этапы работ?</div>
+            <div class="popup-btn flex">
+                <button class="btn btn-no">Отмена</button>
+                <button class="btn btn-yes">Да, конечно</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content flex jc-sb">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="jDOM">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list flex">
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/repairs-icon.svg" alt="Ремонты">Ремонты
+                            </a></li>
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/new-icon.svg" alt="Создать">Создать новый
+                            </a></li>
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/setting-icon.svg" alt="Настройки">Настройки
+                            </a></li>
+                    </ul>
+
+                    <div class="burger-menu">
+                        <span class="burger-menu__item"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="subheader flex jc-sb">
+                <div class="subheader-text">
+                    <div class="subheader-text__adress">Независимости, 119</div>
+                    <div class="subheader-text__contact">
+                        <span class="name">Валерий</span><br>
+                        <a href="tel:375291234567">+375 29 <span>123-45-67</span></a>
+                    </div>
+                </div>
+                <div class="subheader-share">
+                    <button>
+                        <img src="img/admin-2/share-icon.svg" alt="Share">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-tabs">
+            <ul class="tabs-list flex jc-c">
+                <li class="tabs-list__item active-tab">
+                    <a href="#" class="flex ai-c jc-c">Проект</a>
+                </li>
+                <li class="tabs-list__item flex ai-c jc-c">
+                    <a href="#" class="active flex ai-c jc-c">Смета</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-content">
+            <form action="" class="main-form">
+                <div class="container">
+                    <div class="main-form__content">
+                        <h2 class="title">Потолок</h2>
+                        <div class="panel flex jc-fl-end">
+                            <div class="panel-header flex ai-c jc-sb">
+                                <div class="main-form__item flex ai-c jc-sb">
+                                    <span class="name-work">Лист общих указаний</span>
+                                    <div class=" param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel flex jc-fl-end">
+                            <div class="panel-header">
+                                <div class="main-form__item flex ai-c jc-sb">
+                                    <span class="name-work">Обмеры, план до перепланировки</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel flex ai-fl-end fl-cl">
+                            <div class="panel-header">
+                                <div class="main-form__item preitem flex ai-c jc-sb">
+                                    <button class="btn-calendar">Календарь</button>
+                                    <span class="name-work">План потолков</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <div class="price"><span>$</span> 2</div>
+                                            <span class="units">метров квадратных</span>
+                                            <input type="text" placeholder="0">
+                                        </div>
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="switch-block flex ai-c">
+                                        <div class="switch-btn" onClick="switchOn(event)"></div>
+                                        <span>Сложно</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="main-from__item sub-item flex fl-cl">
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <button class="btn-calendar">Календарь</button>
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="add-file">
+                                                    <input type="file" onChange="loadFiles(event)" multiple>
+                                                    <span>
+                                                        <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                        <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                        <span class="counter"></span>
+                                                    </span>
+                                                </label>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <!--<button class="btn-calendar">Календарь</button>-->
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="price"><span>$</span> 1,5</div>
+                                                <span class="units">метров квадратных</span>
+                                                <input type="text" placeholder="0">
+                                            </div>
+                                            <div class="flex ai-c">
+                                                <label class="add-file">
+                                                    <input type="file" onChange="loadFiles(event)" multiple>
+                                                    <span>
+                                                        <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                        <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                        <span class="counter"></span>
+                                                    </span>
+                                                </label>
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title">Стены под покраску / декоративную штукатурку</h2>
+                        <div class="panel flex jc-fl-end">
+                            <div class="panel-header">
+                                <div class="main-form__item flex ai-c jc-sb">
+                                    <button class="btn-calendar">Календарь</button>
+                                    <span class="name-work">Грунтовка стен СТ-17 / 4 слоя</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <div class="price"><span>$</span> 11,7</div>
+                                            <span class="units">метров погонных</span>
+                                            <input type="text" placeholder="0">
+                                        </div>
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel flex ai-fl-end fl-cl">
+                            <div class="panel-header">
+                                <div class="main-form__item preitem flex ai-c jc-sb">
+                                    <button class="btn-calendar">Календарь</button>
+                                    <span class="name-work">Шпатлевка</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <div class="price"><span>$</span> 21</div>
+                                            <span class="units">метров квадратных</span>
+                                            <input type="text" placeholder="0">
+                                        </div>
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="main-from__item sub-item flex fl-cl">
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Шпатлевка стартовая / 2 слоя</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Шлифовка стартовая</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Оклейка паутиной</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Шпатлевка финишная / 2 слоя</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Шлифовка финишная</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" onClick="checkItem(event)">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel flex jc-fl-end">
+                            <div class="panel-header">
+                                <div class="main-form__item flex ai-c jc-sb no-process">
+                                    <button class="btn-calendar">Календарь</button>
+                                    <span class="name-work">Предоставление краски от заказчика</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <span class="units">литров</span>
+                                            <input type="text" placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel flex jc-fl-end">
+                            <div class="panel-header">
+                                <div class="main-form__item flex ai-c jc-sb">
+                                    <button class="btn-calendar">Календарь</button>
+                                    <span class="name-work">Покраска стен / 4 слоя</span>
+                                    <div class="param flex ai-c">
+                                        <div class="flex ai-c">
+                                            <div class="price"><span>$</span> 11,7</div>
+                                            <span class="units">метров погонных</span>
+                                            <input type="text" placeholder="0">
+                                        </div>
+                                        <div class="flex ai-c">
+                                            <label class="add-file">
+                                                <input type="file" onChange="loadFiles(event)" multiple>
+                                                <span>
+                                                    <img src="img/admin-2/clip-icon.svg" alt="add file" class="clip">
+                                                    <img src="img/admin-2/clip-white-icon.svg" alt="add file" class="clip-white">
+                                                    <span class="counter"></span>
+                                                </span>
+                                            </label>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" onClick="checkItem(event)">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex jc-sb ai-fl-end">
+                            <div class="project-time flex ai-fl-end">
+                                <time class="flex">16.07 <span>&mdash;</span></time>
+                                <p><span>-</span> примерная дата окончания ремонтных работ</p>
+                            </div>
+                            <div class="project-sum flex jc-fl-end">
+                                Сумма, <span>$</span> <span class="number">1 024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <div class="container">
+                        <div class="form-btn flex jc-fl-end">
+                            <button class="btn cancel">Отмена</button>
+                            <button class="btn save">Сохранить изменения</button>
+                        </div>
+                        <div class="btn-block__time flex jc-fl-end">
+                            <span>Последние изменения -</span>
+                            <time>23.07.2018</time>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="pras.by/ru" class="flex ai-c jc-fl-end">
+                <img src="img/logo_PRAS.svg" alt="PRAS">
+                Проект <span>компании PRAS</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/admin-2.js"></script>
+</body>
+
+</html>

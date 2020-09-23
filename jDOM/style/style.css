@@ -1,0 +1,373 @@
+html,
+body {
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato'; }
+
+.flex {
+  display: flex; }
+
+.fl-cl {
+  flex-direction: column; }
+
+.jc-sb {
+  justify-content: space-between; }
+
+.ai-c {
+  align-items: center; }
+
+.jc-fl-end {
+  justify-content: flex-end; }
+
+.bg-left {
+  background: linear-gradient(135deg, #facd68 10%, #ffb533 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 100%;
+  z-index: -1; }
+.bg-right {
+  background: linear-gradient(135deg, #facd68 10%, #ffb533 100%);
+  position: absolute;
+  top: 0;
+  left: 720px;
+  width: calc(100% - 720px);
+  height: 100%;
+  z-index: -1; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
+
+.container {
+  max-width: 1620px;
+  margin: 0 auto; }
+
+.header {
+  pointer-events: none;
+  padding-top: 90px; }
+  .header .logo {
+    margin-left: 195px; }
+    .header .logo img {
+      width: 683px;
+      height: 427px; }
+
+.main {
+  margin-top: -85px; }
+  .main .form {
+    margin-bottom: 35px;
+    margin-left: 430px; }
+    .main .form label {
+      opacity: 0.5;
+      font-size: 20px;
+      font-weight: 300;
+      color: #000;
+      margin-bottom: 5px; }
+    .main .form input {
+      width: 429px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #fff;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+      font-style: italic;
+      color: #000;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      border-radius: none; }
+    .main .form .company {
+      align-items: baseline; }
+      .main .form .company p {
+        opacity: .5;
+        font-size: 13px;
+        font-weight: 100;
+        color: #000;
+        margin-left: 203px; }
+        .main .form .company p span {
+          font-style: italic; }
+    .main .form-btn {
+      margin-top: 25px; }
+      .main .form-btn .btn {
+        margin-left: -2px;
+        height: 55px;
+        border: 1px solid #000000;
+        border-radius: 27.5px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .5s; }
+      .main .form-btn__registration {
+        width: 250px;
+        margin-right: 20px; }
+      .main .form-btn__login {
+        width: 163px;
+        margin-right: 20px; }
+        .main .form-btn__login .login-mobile {
+          display: none; }
+      .main .form-btn .left {
+        background-color: transparent;
+        color: #000; }
+        .main .form-btn .left:hover {
+          color: #fff; }
+      .main .form-btn .right {
+        background-color: #000;
+        color: #fff; }
+        .main .form-btn .right:hover {
+          color: #ffb533; }
+    .main .form .link {
+      margin-top: 35px; }
+      .main .form .link .link-password {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+        transition: .3s;
+        border-bottom: 1px solid #000;
+        text-decoration: none; }
+        .main .form .link .link-password__mobile {
+          display: none; }
+        .main .form .link .link-password:hover {
+          color: #fff; }
+    .main .form .mobile-link {
+      margin-top: 0; }
+
+.footer {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  width: 100%;
+  height: 70px; }
+  .footer img {
+    margin-right: 10px; }
+  .footer a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none; }
+    .footer a span {
+      text-decoration: underline; }
+    .footer a:hover {
+      color: #000; }
+
+@media (max-width: 1200px) {
+  .footer {
+    height: 50px;
+    right: 50px; } }
+@media (max-width: 1060px) {
+  .bg-left {
+    width: 520px; }
+  .bg-right {
+    left: 520px;
+    width: calc(100% - 520px); }
+
+  .header .logo {
+    margin-left: 70px; }
+    .header .logo img {
+      width: 616px;
+      height: 330px; }
+
+  .main {
+    margin-top: -60px; }
+    .main .form {
+      margin-left: 295px; } }
+@media (max-width: 768px) {
+  .bg-left {
+    width: 450px; }
+  .bg-right {
+    left: 450px;
+    width: calc(100% - 450px); }
+
+  .header .logo {
+    margin-left: 50px; }
+    .header .logo img {
+      width: 542px;
+      height: 300px; }
+
+  .main {
+    margin-top: -60px; }
+    .main .form {
+      margin-left: 245px; }
+      .main .form input {
+        width: 360px; }
+      .main .form .company p {
+        margin-left: 135px; }
+      .main .form-btn__registration {
+        width: 205px; }
+      .main .form-btn__login {
+        width: 140px; }
+      .main .form .link-password {
+        margin-top: 35px; }
+        .main .form .link-password__mobile {
+          display: none; } }
+@media (max-width: 660px) {
+  .bg-left {
+    width: 415px; }
+  .bg-right {
+    left: 415px;
+    width: calc(100% - 415px); }
+
+  .header {
+    padding-top: 75px; }
+    .header .logo {
+      margin-left: 46px; }
+      .header .logo img {
+        width: 505px;
+        height: 270px; }
+
+  .main {
+    margin-top: -65px; }
+    .main .form {
+      margin-left: 230px; }
+      .main .form label {
+        font-size: 18px; }
+      .main .form input {
+        width: 318px;
+        margin-bottom: 25px;
+        font-size: 18px; }
+      .main .form .company p {
+        margin-left: 90px; }
+      .main .form-btn {
+        margin-top: 0; }
+        .main .form-btn .btn {
+          margin-left: 0;
+          height: 38px;
+          font-size: 12px; }
+        .main .form-btn__registration {
+          width: 160px; }
+        .main .form-btn__login {
+          width: 138px; } }
+@media (max-width: 595px) {
+  .bg-left {
+    width: 296px; }
+  .bg-right {
+    left: 296px;
+    width: calc(100% - 296px); }
+
+  .header .logo img {
+    width: 328px;
+    height: 200px; }
+
+  .main {
+    margin-top: -25px; }
+    .main .form {
+      margin-left: 161px; } }
+@media (max-width: 530px) {
+  .main .form label {
+    font-size: 16px; }
+  .main .form input {
+    width: 280px;
+    margin-bottom: 25px;
+    font-size: 16px; }
+  .main .form .company p {
+    margin-left: 60px; }
+  .main .form-btn {
+    display: flex;
+    flex-direction: column; }
+    .main .form-btn .btn {
+      width: 280px;
+      margin-bottom: 20px; }
+    .main .form-btn__login {
+      order: -1; }
+      .main .form-btn__login .login-desk {
+        display: none; }
+      .main .form-btn__login .login-mobile {
+        display: block; }
+  .main .form .link {
+    align-self: baseline; }
+    .main .form .link .link-password__mobile {
+      margin-top: 0;
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      border-bottom: none;
+      text-decoration: underline; }
+    .main .form .link .link-password__desk {
+      display: none; } }
+@media (max-width: 470px) {
+  .bg-left {
+    width: 248px; }
+  .bg-right {
+    left: 248px;
+    width: calc(100% - 248px); }
+
+  .header {
+    padding-top: 50px; }
+    .header .logo {
+      margin-left: 30px; }
+      .header .logo img {
+        width: 285px;
+        height: 175px; }
+
+  .main {
+    margin-top: -25px; }
+    .main .form {
+      margin-left: 129px; }
+      .main .form label {
+        font-size: 15px; }
+      .main .form input {
+        width: 250px;
+        margin-bottom: 25px;
+        font-size: 15px; }
+      .main .form .company p {
+        margin-left: 40px; }
+      .main .form-btn .btn {
+        width: 250px;
+        margin-bottom: 20px; } }
+@media (max-width: 400px) {
+  .bg-left {
+    width: 258px; }
+  .bg-right {
+    left: 258px;
+    width: calc(100% - 258px); }
+
+  .header {
+    padding-top: 38px; }
+    .header .logo {
+      margin-left: 15px; }
+      .header .logo img {
+        width: 131px;
+        height: 83px; }
+
+  .main {
+    margin-top: 5px; }
+    .main .form {
+      margin-left: 60px; }
+      .main .form label {
+        font-size: 14px; }
+      .main .form input {
+        width: 238px;
+        font-size: 14px;
+        margin-bottom: 25px; }
+      .main .form .company p {
+        font-size: 13px;
+        margin-left: 35px; }
+      .main .form-btn {
+        margin-top: 0; }
+        .main .form-btn .btn {
+          height: 38px;
+          font-size: 12px;
+          width: 238px; }
+        .main .form-btn__registration {
+          margin-right: 0; }
+        .main .form-btn__login {
+          margin-right: 0;
+          margin-bottom: 10px; }
+
+  .footer {
+    right: 30px;
+    bottom: 30px; }
+    .footer img {
+      width: 58px;
+      height: 12px; }
+    .footer a {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */

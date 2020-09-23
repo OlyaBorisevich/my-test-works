@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jDOM</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/admin-6.css">
+    <link rel="stylesheet" href="style/lato.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content flex jc-sb">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="jDOM">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list flex">
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/repairs-icon.svg" alt="Ремонты">Ремонты
+                            </a></li>
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/new-icon.svg" alt="Создать">Создать новый
+                            </a></li>
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-2/setting-icon.svg" alt="Настройки">Настройки
+                            </a></li>
+                        <li class="nav-list__item"><a href="#" class="flex ai-c">
+                                <img src="img/admin-5/exit.svg" alt="Выйти">Выйти
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="subheader flex jc-sb">
+                <div class="subheader-text">
+                    <div class="subheader-text__adress">Независимости, 119</div>
+                    <div class="subheader-text__contact">
+                        <span class="name">Валерий</span><br>
+                        <a href="tel:375291234567">+375 29 <span>123-45-67</span></a>
+                    </div>
+                </div>
+                <div class="subheader-share">
+                    <button>
+                        <img src="img/admin-2/share-icon.svg" alt="Share">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-tabs">
+            <ul class="tabs-list flex jc-c">
+                <li class="tabs-list__item active-tab">
+                    <a href="#" class="active flex ai-c jc-c">Проект</a>
+                </li>
+                <li class="tabs-list__item flex ai-c jc-c">
+                    <a href="#" class="flex ai-c jc-c">Смета</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-content">
+            <form action="" class="main-form">
+                <div class="container">
+                    <div class="form-btn flex ai-c jc-fl-end">
+                        <button class="btn btn-change">Изменить все цены</button>
+                    </div>
+                    <div class="main-form__content">
+                        <h2 class="title">Работа с потолком</h2>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <div class="main-form__item preitem flex ai-c jc-sb">
+                                    <span class="name-work">Работа потолка с</span>
+                                    <button class="delite"></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="main-from__item subitem flex fl-cl">
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-btn">
+                                        <button class="flex ai-c"><span></span>Добавить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title">Стены</h2>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <div class="main-form__item preitem flex ai-c jc-sb">
+                                    <span class="name-work"></span>
+                                    <button class="delite"></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="main-from__item subitem flex fl-cl">
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item"><span>€</span>евро</li>
+                                                                <li class="list-units__item"><span>₽</span>российский рубль</li>
+                                                                <li class="list-units__item"><span>Br</span>белорусский рубль</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item"><span>€</span>евро</li>
+                                                                <li class="list-units__item"><span>₽</span>российский рубль</li>
+                                                                <li class="list-units__item"><span>Br</span>белорусский рубль</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span data-switch-text-id="15">Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item"><span>€</span>евро</li>
+                                                                <li class="list-units__item"><span>₽</span>российский рубль</li>
+                                                                <li class="list-units__item"><span>Br</span>белорусский рубль</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item"><span>€</span>евро</li>
+                                                                <li class="list-units__item"><span>₽</span>российский рубль</li>
+                                                                <li class="list-units__item"><span>Br</span>белорусский рубль</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-btn">
+                                        <button class="flex ai-c"><span></span>Добавить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title">Полы</h2>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <div class="main-form__item preitem flex ai-c jc-sb">
+                                    <span class="name-work"></span>
+                                    <button class="delite"></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="main-from__item subitem flex fl-cl">
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Ведомость отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="subitem-element flex ai-c jc-sb">
+                                        <span class="name-work">Количество видов отделки</span>
+                                        <div class="param flex ai-c">
+                                            <div class="flex ai-c">
+                                                <div class="flex ai-c">
+                                                    <div>
+                                                        <button class="units">количество / $</button>
+                                                        <div class="block-list-units">
+                                                            <ul class="list-units">
+                                                                <li class="list-units__item">метр погонный</li>
+                                                                <li class="list-units__item">литр</li>
+                                                                <li class="list-units__item">метр квадратный</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <div class="flex ai-c">
+                                                    <span class="units">сложность / $</span>
+                                                    <input type="text" placeholder="0">
+                                                </div>
+                                                <button class="delite"></button>
+                                            </div>
+                                        </div>
+                                        <div class="switch-block flex ai-c">
+                                            <div class="switch-btn" onClick="switchOn(event)"></div>
+                                            <span>Материал</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-btn">
+                                        <button class="flex ai-c"><span></span>Добавить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-btn">
+                            <button class="flex ai-c"><span></span>Добавить группу</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <div class="container">
+                        <div class="form-btn flex jc-fl-end">
+                            <button class="btn cancel">Отмена</button>
+                            <button class="btn save">Сохранить изменения</button>
+                        </div>
+                        <div class="btn-block__time flex jc-fl-end">
+                            <span>Последние изменения -</span>
+                            <time>23.07.2018</time>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="pras.by/ru" class="flex ai-c jc-fl-end">
+                <img src="img/logo_PRAS.svg" alt="PRAS">
+                Проект <span>компании PRAS</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/admin-6.js"></script>
+</body></html>
