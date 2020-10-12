@@ -93,6 +93,7 @@ body {
     }
 
     .inform {
+        position: relative;
         padding-top: 21px;
         margin-right: 86px;
         //background: $bg-first;
@@ -142,6 +143,7 @@ body {
         //flex-basis: 40%;
         margin-left: 70px;
         //background: $bg-second;
+        position: relative;
 
         &-contact {
             margin-top: 40px;
