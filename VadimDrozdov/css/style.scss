@@ -156,11 +156,11 @@ body {
                     line-height: 32px;
                     color: #000000;
                     text-decoration: none;
-                    
+
                     &:hover {
                         opacity: .6;
                     }
-                    
+
                     &:focus {
                         opacity: .4;
                         outline: none;
@@ -179,6 +179,28 @@ body {
 
             .mobile {
                 display: none;
+            }
+
+            &__phone {
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #151615;
+                    
+                    &:hover {
+                        opacity: .6;
+                    }
+
+                    &:focus {
+                        opacity: .4;
+                        outline: none;
+                    }
+                }
             }
 
             &__social {
@@ -204,7 +226,7 @@ body {
                             fill: #7F4B9B;
                         }
 
-                        .wirless {
+                        .signal {
                             fill: #3A72E8;
                         }
 

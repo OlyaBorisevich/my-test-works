@@ -119,6 +119,20 @@ body {
       line-height: 24px; }
     .main .aside-contact .mobile {
       display: none; }
+    .main .aside-contact__phone {
+      margin-top: 20px; }
+      .main .aside-contact__phone a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #151615; }
+        .main .aside-contact__phone a:hover {
+          opacity: .6; }
+        .main .aside-contact__phone a:focus {
+          opacity: .4;
+          outline: none; }
     .main .aside-contact__social {
       margin-top: 60px; }
       .main .aside-contact__social a:not(:last-child) {
@@ -131,7 +145,7 @@ body {
         fill: #52E57C; }
       .main .aside-contact__social a:hover .viber {
         fill: #7F4B9B; }
-      .main .aside-contact__social a:hover .wirless {
+      .main .aside-contact__social a:hover .signal {
         fill: #3A72E8; }
       .main .aside-contact__social a:hover .telegram {
         fill: #37AEE3; }
