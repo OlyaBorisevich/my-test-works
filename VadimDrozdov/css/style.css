@@ -163,7 +163,6 @@ body {
     padding: 0 20px; } }
 @media (max-width: 1280px) {
   body {
-    height: auto;
     background: none; }
 
   .container {
@@ -173,7 +172,7 @@ body {
   .main {
     height: 100%; }
     .main-content {
-      height: auto;
+      height: 100%;
       margin-bottom: 0; }
     .main .inform {
       padding-left: 40px;
@@ -200,10 +199,12 @@ body {
       flex-basis: 100%;
       margin-right: 0;
       padding-bottom: 40px; }
-      .main-content .inform-content__en {
-        padding-top: 52px; }
-      .main-content .inform-content__list {
-        margin-top: 30px; }
+      .main-content .inform-content {
+        height: auto; }
+        .main-content .inform-content__en {
+          padding-top: 52px; }
+        .main-content .inform-content__list {
+          margin-top: 30px; }
     .main-content .aside {
       padding-bottom: 20px;
       flex-basis: 100%;
