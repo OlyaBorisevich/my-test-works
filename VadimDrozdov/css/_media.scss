@@ -22,7 +22,7 @@
         height: 100%;
 
         &-content {
-            height: auto;
+            height: 100%;
             margin-bottom: 0;
         }
 
@@ -75,6 +75,8 @@
                 padding-bottom: 40px;
 
                 &-content {
+                    height: auto;
+
                     &__en {
                         padding-top: 52px;
                     }
@@ -181,16 +183,16 @@
             .subtitle {
                 font-size: 28px;
             }
-            
+
             &-content {
                 &__en {
                     padding-top: 35px;
                 }
-                
+
                 &__ru {
                     margin-top: 35px;
                 }
-                
+
                 &__list {
                     margin-top: 10px;
                 }
