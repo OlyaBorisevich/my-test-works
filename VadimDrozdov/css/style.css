@@ -194,13 +194,14 @@ body {
     padding-right: 20px; } }
 @media (max-width: 1065px) {
   .main-content {
+    height: auto;
     flex-direction: column; }
     .main-content .inform {
       flex-basis: 100%;
       margin-right: 0;
       padding-bottom: 40px; }
       .main-content .inform-content {
-        height: auto; }
+        width: 100%; }
         .main-content .inform-content__en {
           padding-top: 52px; }
         .main-content .inform-content__list {
