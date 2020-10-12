@@ -10,7 +10,6 @@
 
 @media(max-width: 1280px) {
     body {
-        height: auto;
         background: none;
     }
 
@@ -23,7 +22,7 @@
         height: 100%;
 
         &-content {
-            height: 100%;
+            height: auto;
             margin-bottom: 0;
         }
 
@@ -76,8 +75,6 @@
                 padding-bottom: 40px;
 
                 &-content {
-                    width: 100%;
-
                     &__en {
                         padding-top: 52px;
                     }
