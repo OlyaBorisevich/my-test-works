@@ -247,7 +247,7 @@ body {
     margin-top: 35px; }
   .main .inform-content__list {
     margin-top: 10px; } }
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   .main-content__logo {
     padding-left: 14px; }
   .main .inform .subtitle {
