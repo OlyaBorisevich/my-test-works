@@ -1,0 +1,91 @@
+@import 'additional';
+@import 'breadcrumb';
+
+$mainColor: #fbc75b;
+$footerColor: #facd68;
+
+@import 'header-footer';
+
+.main {
+    .section-content {
+        .title {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 40px;
+            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: 0.025em;
+            color: #000000;
+        }
+
+        .article {
+            margin-top: 62px;
+            margin-bottom: 58px;
+
+            .container-article {
+                max-width: 782px;
+                margin: 0 auto;
+            }
+
+            .text {
+                font-size: 22px;
+                line-height: 33px;
+                font-weight: 700;
+                color: #000000;
+            }
+
+            &-btn {
+                background-color: transparent;
+                width: 257px;
+                height: 36px;
+                border: 1px solid #000000;
+                border-radius: 18px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .section-order {
+        padding-bottom: 120px;
+        padding-top: 335px;
+        background: url('../img/bg_section.png') center center/cover no-repeat;
+
+        .order-consultation {
+            &__text {
+                font-size: 100px;
+                line-height: 110px;
+                font-weight: 900;
+                letter-spacing: 0.025em;
+                color: #ffffff;
+            }
+
+            &__btn {
+                margin-top: 75px;
+
+                button {
+                    width: 480px;
+                    height: 50px;
+                    background-color: #ffffff;
+                    box-shadow: 0px 5px 15px 0px rgba(82, 59, 0, 0.3);
+                    border-radius: 40px;
+                    font-size: 24px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #000000;
+                    cursor: pointer;
+                    border: none;
+                    transition: .2s;
+
+                    &:hover {
+                        opacity: .6;
+                    }
+
+                    &:focus {
+                        opacity: .4s;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,281 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  font-family: 'Lato'; }
+
+.container {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.flex {
+  display: flex; }
+
+.fl-cl {
+  flex-direction: column; }
+
+.ai-c {
+  align-items: center; }
+
+.ai-fl-end {
+  align-items: flex-end; }
+
+.ai-b {
+  align-items: baseline; }
+
+.jc-c {
+  justify-content: center; }
+
+.jc-sb {
+  justify-content: space-between; }
+
+.jc-fl-end {
+  justify-content: flex-end; }
+
+.grid {
+  display: grid; }
+
+.section-breadcrumb {
+  padding-top: 105px; }
+  .section-breadcrumb .breadcrumb-block .breadcrumb {
+    list-style-type: none; }
+    .section-breadcrumb .breadcrumb-block .breadcrumb-item {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #bfbfbf; }
+      .section-breadcrumb .breadcrumb-block .breadcrumb-item:after {
+        padding-left: 6px;
+        color: inherit;
+        content: "/\00a0"; }
+      .section-breadcrumb .breadcrumb-block .breadcrumb-item:hover {
+        opacity: .6; }
+      .section-breadcrumb .breadcrumb-block .breadcrumb-item:focus {
+        opacity: .4; }
+    .section-breadcrumb .breadcrumb-block .breadcrumb .breadcrumb-item__last:after {
+      display: none; }
+
+.header {
+  background-color: #fbc75b;
+  padding-bottom: 50px; }
+  .header-content .logo-block {
+    margin-top: 67px; }
+    .header-content .logo-block__img {
+      margin-right: 25px;
+      width: 202px;
+      height: 126px; }
+      .header-content .logo-block__img a:focus {
+        outline: none; }
+      .header-content .logo-block__img img {
+        width: 202px;
+        height: 126px; }
+    .header-content .logo-block__text {
+      opacity: 0.5;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #000000; }
+  .header-content .nav-block {
+    margin-top: 110px; }
+    .header-content .nav-block .nav-list {
+      list-style-type: none; }
+      .header-content .nav-block .nav-list li {
+        margin-right: 55px; }
+        .header-content .nav-block .nav-list li:last-child {
+          margin-right: 0; }
+      .header-content .nav-block .nav-list__item {
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 900;
+        color: #000000;
+        transition: .2s; }
+        .header-content .nav-block .nav-list__item:hover {
+          color: #999; }
+        .header-content .nav-block .nav-list__item:focus {
+          outline: none;
+          opacity: .4; }
+
+.footer {
+  padding-bottom: 100px;
+  background-color: #fbc75b;
+  /*position: absolute;
+  bottom: 0;
+  right: 0;*/
+  width: 100%; }
+  .footer-content .logo-block {
+    margin-top: 61px; }
+    .footer-content .logo-block__img {
+      margin-right: 20px;
+      width: 161px;
+      height: 100px; }
+      .footer-content .logo-block__img a:focus {
+        outline: none; }
+      .footer-content .logo-block__img img {
+        width: 161px;
+        height: 100px; }
+    .footer-content .logo-block__text {
+      opacity: 0.5;
+      font-size: 19px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #000000; }
+  .footer-content .contact-block {
+    margin-top: 62px; }
+    .footer-content .contact-block__btn {
+      margin-right: 95px; }
+      .footer-content .contact-block__btn .btn {
+        width: 300px;
+        height: 50px;
+        background-color: #000000;
+        box-shadow: 0px 5px 15px 0px rgba(82, 59, 0, 0.3);
+        border-radius: 25px;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: .2s; }
+        .footer-content .contact-block__btn .btn:hover {
+          background-color: #999; }
+        .footer-content .contact-block__btn .btn:focus {
+          outline: none;
+          opacity: .4; }
+    .footer-content .contact-block__contact a {
+      text-decoration: none;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #000000;
+      transition: .2s; }
+      .footer-content .contact-block__contact a:hover {
+        color: #999; }
+      .footer-content .contact-block__contact a:focus {
+        outline: none;
+        opacity: .4; }
+      .footer-content .contact-block__contact a span {
+        font-size: 26px; }
+    .footer-content .contact-block__contact .email {
+      margin-top: 30px;
+      text-align: right; }
+
+.main .section-content {
+  padding-bottom: 180px; }
+  .main .section-content .title {
+    margin-top: 25px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #000000; }
+  .main .section-content .tag-block {
+    margin-top: 50px; }
+    .main .section-content .tag-block__item {
+      padding: 13px 0px 11px 25px;
+      background-color: #d9d9d9;
+      border-radius: 20px;
+      margin-right: 20px;
+      cursor: pointer; }
+      .main .section-content .tag-block__item:hover {
+        background-color: #999; }
+      .main .section-content .tag-block__item span {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #000000;
+        margin-right: 20px; }
+      .main .section-content .tag-block__item button {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: none; }
+        .main .section-content .tag-block__item button:focus {
+          outline: none; }
+        .main .section-content .tag-block__item button svg {
+          fill: #fff; }
+    .main .section-content .tag-block .inactive-item {
+      background-color: #fff;
+      border: 1px solid #000;
+      transition: .2s; }
+      .main .section-content .tag-block .inactive-item:hover {
+        background-color: #999; }
+        .main .section-content .tag-block .inactive-item:hover span {
+          color: #fff; }
+      .main .section-content .tag-block .inactive-item span {
+        color: #999; }
+      .main .section-content .tag-block .inactive-item svg {
+        fill: #000;
+        transform: rotate(45deg); }
+  .main .section-content .gallery-block {
+    margin-top: 85px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 350px); }
+    .main .section-content .gallery-block__item a {
+      text-decoration: none; }
+      .main .section-content .gallery-block__item a:hover {
+        opacity: .6; }
+    .main .section-content .gallery-block__item .gallery-info {
+      margin-top: 25px;
+      margin-bottom: 27px; }
+      .main .section-content .gallery-block__item .gallery-info .adress {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #bfbfbf; }
+      .main .section-content .gallery-block__item .gallery-info .object {
+        font-size: 26px;
+        font-weight: 700;
+        color: #000000; }
+        .main .section-content .gallery-block__item .gallery-info .object .place:after {
+          padding-left: 8px;
+          opacity: .4;
+          content: "/\00a0"; }
+      .main .section-content .gallery-block__item .gallery-info .time {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000; }
+      .main .section-content .gallery-block__item .gallery-info .description-list {
+        margin-top: 13px;
+        list-style-type: none; }
+        .main .section-content .gallery-block__item .gallery-info .description-list li {
+          color: #000;
+          font-size: 18px; }
+    .main .section-content .gallery-block .order-consultation {
+      padding: 60px 35px 57px 30px;
+      background-color: #fc76b3;
+      background-image: linear-gradient(-45deg, #ffb533 14%, #facd68 85%); }
+      .main .section-content .gallery-block .order-consultation__content {
+        height: 100%; }
+      .main .section-content .gallery-block .order-consultation__text {
+        font-size: 26px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff; }
+      .main .section-content .gallery-block .order-consultation__btn button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer; }
+        .main .section-content .gallery-block .order-consultation__btn button:hover {
+          opacity: .6; }
+        .main .section-content .gallery-block .order-consultation__btn button:focus {
+          opacity: .4; }
+
+/*# sourceMappingURL=projects.css.map */

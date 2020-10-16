@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.container {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.fl-cl {
+    flex-direction: column;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.ai-fl-end {
+    align-items: flex-end;
+}
+
+.ai-b {
+    align-items: baseline;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-fl-end {
+    justify-content: flex-end;
+}
+
+.grid {
+    display: grid;
+}

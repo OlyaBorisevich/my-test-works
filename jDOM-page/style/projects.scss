@@ -1,0 +1,184 @@
+@import 'additional';
+@import 'breadcrumb';
+
+$mainColor: #fbc75b;
+$footerColor: #fbc75b;
+
+@import 'header-footer';
+
+.main {
+    .section-content {
+        padding-bottom: 180px;
+
+        .title {
+            margin-top: 25px;
+            font-size: 40px;
+            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: 0.025em;
+            color: #000000;
+        }
+
+        .tag-block {
+            margin-top: 50px;
+
+            &__item {
+                padding: 13px 0px 11px 25px;
+                background-color: #d9d9d9;
+                border-radius: 20px;
+                margin-right: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #999;
+                }
+
+                span {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #000000;
+                    margin-right: 20px;
+                }
+
+                button {
+                    margin-right: 10px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: transparent;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .inactive-item {
+                background-color: #fff;
+                border: 1px solid #000;
+                transition: .2s;
+
+                &:hover {
+                    background-color: #999;
+
+                    span {
+                        color: #fff;
+                    }
+                }
+
+                span {
+                    color: #999;
+                }
+
+                svg {
+                    fill: #000;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        .gallery-block {
+            margin-top: 85px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 350px);
+
+            &__item {
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
+
+                .gallery-img {}
+
+                .gallery-info {
+                    margin-top: 25px;
+                    margin-bottom: 27px;
+
+                    .adress {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #bfbfbf;
+                    }
+
+                    .object {
+                        font-size: 26px;
+                        font-weight: 700;
+                        color: #000000;
+
+                        .place {
+                            &:after {
+                                padding-left: 8px;
+                                opacity: .4;
+                                content: "/\00a0";
+                            }
+                        }
+                    }
+
+                    .time {
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                    }
+
+                    .description {
+                        &-list {
+                            margin-top: 13px;
+                            list-style-type: none;
+
+                            li {
+                                color: #000;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .order-consultation {
+                padding: 60px 35px 57px 30px;
+                background-color: #fc76b3;
+                background-image: linear-gradient(-45.0deg, #ffb533 14%, #facd68 85%);
+
+                &__content {
+                    height: 100%;
+                }
+
+                &__text {
+                    font-size: 26px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+
+                &__btn {
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #fff;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            opacity: .6;
+                        }
+                        
+                        &:focus {
+                            opacity: .4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
