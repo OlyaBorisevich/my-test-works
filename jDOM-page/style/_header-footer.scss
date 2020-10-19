@@ -35,6 +35,7 @@
 
         .nav-block {
             margin-top: 110px;
+            position: relative;
 
             .nav-list {
                 list-style-type: none;
@@ -62,6 +63,55 @@
                     &:focus {
                         outline: none;
                         opacity: .4;
+                    }
+                }
+            }
+
+            .burger-menu {
+                display: none;
+                position: absolute;
+                right: 60px;
+                top: 18px;
+                z-index: 5;
+                transform: translateY(-50%);
+
+                &__item {
+                    width: 21px;
+                    height: 5px;
+                    background-color: #000;
+                    display: block;
+                    position: relative;
+                    transition: .2s;
+
+                    &:hover {
+                        background-color: #fff;
+
+                        &::after,
+                        &::before {
+                            background-color: #fff;
+                        }
+                    }
+
+                    &::after,
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        height: 5px;
+                        display: block;
+                        background-color: #000;
+                        transition: .2s;
+                    }
+
+                    &::before {
+                        width: 26px;
+                        top: -10px;
+                        left: 5px;
+                    }
+
+                    &::after {
+                        width: 16px;
+                        bottom: -10px;
+                        left: 10px;
                     }
                 }
             }
@@ -99,6 +149,7 @@
             }
 
             &__text {
+                margin-top: -11px;
                 opacity: 0.5;
                 font-size: 19px;
                 line-height: 20px;

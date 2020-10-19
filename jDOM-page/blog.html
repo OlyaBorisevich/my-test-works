@@ -17,6 +17,8 @@
     <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="style/lato.css">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.css">
     <link rel="stylesheet" href="style/blog.css">
 </head>
 
@@ -28,7 +30,27 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M73.0015 10.9269C73.0015 14.2799 70.3386 16.9969 67.0526 16.9969C63.7676 16.9969 61.1035 14.2799 61.1035 10.9269C61.1035 7.57493 63.7676 4.85693 67.0526 4.85693C70.3386 4.85693 73.0015 7.57493 73.0015 10.9269Z" />
             </g>
         </symbol>
+        <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+            <path class="cls-1" d="M1560,2580v-8h-9v-4h9v-8l12,10Z" transform="translate(-1551 -2560)" />
+        </symbol>
     </svg>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <div class="popup-btn flex jc-fl-end">
+                <button></button>
+            </div>
+            <div class="popup-main flex jc-sb">
+                <div class="popup-main__text">
+                    <h2>Работы с гипсокартоном</h2>
+                    <p>Что мы можем сделать с помощью гипсокартона? Выровнять стены, произвести отделку потолков, в мгновение ока выстроить новую стену или перегородку, утеплить квартиру или повысить уровень звукоизоляции.</p>
+                </div>
+                <div class="popup-main__btn">
+                    <button>Посмотреть проекты</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="header">
         <div class="container">
@@ -52,6 +74,10 @@
                             <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
                             <li><a href="#" class="nav-list__item">Контакты</a></li>
                         </ul>
+
+                        <div class="burger-menu">
+                            <span class="burger-menu__item"></span>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -59,6 +85,7 @@
     </header>
 
     <main class="main">
+        <div class="bg"></div>
         <div class="container">
             <section class="section-breadcrumb">
                 <div class="breadcrumb-block">
@@ -74,7 +101,7 @@
                 </h2>
                 <article class="article">
                     <div class="container-article">
-                        <div class="text">
+                        <div class="text main-text">
                             Это снос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования по градостроительным и другим объективным обстоят ельствам (высокий физический и моральный износ, аварийное состояние и т.п.), а также создания возможностей для монтажа новых конструкций и оборудования. Нос, разборка, частичное или полное разрушен.
                         </div>
                     </div>
@@ -89,7 +116,128 @@
                     </div>
                 </article>
                 <div class="block-video">
-                    <small>Так выглядит интерфейс кабинета заказчика, где можно следить за своим ремонтом.</small>
+                    <div class="container">
+                        <small>Так выглядит интерфейс кабинета заказчика, где можно следить за своим ремонтом.</small>
+                        <div class="video">
+                            <iframe width="948" height="532" src="https://www.youtube.com/embed/V6WXIOOyEw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article">
+                    <div class="container-article">
+                        <div class="text">
+                            Нос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования по градостроительным и другим объективным обстоятельствам (высокий физический и моральный износ, аварийное состояние и т.п.), а также создания возможностей для монтажа новых конструкций и оборудования.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="container-article">
+                        <div class="text">
+                            Нос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования.
+                        </div>
+                    </div>
+                </article>
+
+                <div class="slider">
+                    <div class="container">
+                        <small>Так выглядит интерфейс кабинета заказчика, где можно следить за своим ремонтом.</small>
+
+                        <div class="slider-block">
+                            <div class="slider-block__item">
+                                <img src="img/gallery/photo_1.jpg" alt="photo">
+                            </div>
+                            <div class="slider-block__item">
+                                <img src="img/gallery/photo_1.jpg" alt="photo">
+                            </div>
+                            <div class="slider-block__item">
+                                <img src="img/gallery/photo_1.jpg" alt="photo">
+                            </div>
+                            <div class="slider-block__item">
+                                <img src="img/gallery/photo_1.jpg" alt="photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article">
+                    <div class="container-article">
+                        <div class="text">
+                            Нос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования по градостроительным и другим объективным обстоятельствам (высокий физический и моральный износ, аварийное состояние и т.п.), а также создания возможностей для монтажа новых конструкций и оборудования.
+                        </div>
+                    </div>
+                </article>
+
+                <div class="insert-block">
+                    <div class="container-insert">
+                        <div class="insert-block__text">
+                            Все смежные вопросы решаются на месте: jDOM сотрудничает с профес сионалами из разных сфер. Это удобно и выгодно.
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article">
+                    <div class="container-article">
+                        <div class="text">
+                            Нос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования по градостроительным. Нос, разборка, частичное или полное разрушение конструкций здания или иного сооружения, связанные с невозможностью его дальнейшего использования градостроительным и другим объективным здания.
+                        </div>
+                    </div>
+                </article>
+
+                <div class="insert-btn">
+                    <div class="container-insert">
+                        <button>Мне нужен ремонт с таким подходом</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-articles">
+                <div class="container">
+                    <div class="articles-content flex">
+                        <div class="articles-content-left">
+                            <div class="articles-block top flex fl-cl ai-fl-end">
+                                <div class="articles-block__img">
+                                    <img src="img/photo-articles/photo_article_1.jpg" alt="photo">
+                                </div>
+                                <div class="articles-block__text">
+                                    <a href="#">
+                                        <h3>Ежедневные фотоотчеты прямо к вам на смартфон</h3>
+                                        <p>Вы сможете отслеживать динамику ремонта без необходимости посещения объекта</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="articles-block flex fl-cl ai-fl-end">
+                                <div class="articles-block__text">
+                                    <a href="#">
+                                        <h3>Стоимость работ не изменяется</h3>
+                                        <p>Вы можете расчитывать на ту стоимость, которую услышали от нас в первый раз.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-content-right">
+                            <div class="articles-block top flex fl-cl ai-fl-start">
+                                <div class="articles-block__img">
+                                    <img src="img/photo-articles/photo_article_2.jpg" alt="photo">
+                                </div>
+                                <div class="articles-block__text">
+                                    <a href="#">
+                                        <h3>Ежедневные фотоотчеты прямо к вам на смартфон</h3>
+                                        <p>Вы сможете отслеживать динамику ремонта без необходимости посещения объекта</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="articles-block flex fl-cl ai-fl-start">
+                                <div class="articles-block__text">
+                                    <a href="#">
+                                        <h3>Стоимость работ не изменяется</h3>
+                                        <p>Вы можете расчитывать на ту стоимость, которую услышали от нас в первый раз.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -137,4 +285,10 @@
             </div>
         </div>
     </footer>
-</body></html>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
