@@ -24,6 +24,7 @@
             }
 
             &__text {
+                margin-top: -15px;
                 opacity: 0.5;
                 font-size: 24px;
                 line-height: 26px;
@@ -41,7 +42,7 @@
                 list-style-type: none;
 
                 li {
-                    margin-right: 55px;
+                    margin-right: 50px;
 
                     &:last-child {
                         margin-right: 0;
@@ -66,6 +67,10 @@
                     }
                 }
             }
+            
+            .nav-list__mobile {
+                display: none;
+            }
 
             .burger-menu {
                 display: none;
@@ -74,6 +79,7 @@
                 top: 18px;
                 z-index: 5;
                 transform: translateY(-50%);
+                cursor: pointer;
 
                 &__item {
                     width: 21px;
@@ -120,7 +126,7 @@
 }
 
 .footer {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: $footerColor;
     /*position: absolute;
     bottom: 0;
@@ -215,6 +221,38 @@
                 .email {
                     margin-top: 30px;
                     text-align: right;
+                }
+            }
+        }
+    }
+
+    &-logo {
+        margin-top: 50px;
+
+        svg {
+            margin-right: 10px;
+            fill: #fff;
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+            transition: .2s;
+
+            span {
+                margin-left: 5px;
+                text-decoration: underline;
+            }
+
+            &:hover {
+                span {
+                    color: #999;
+                }
+
+                svg {
+                    fill: #999;
                 }
             }
         }

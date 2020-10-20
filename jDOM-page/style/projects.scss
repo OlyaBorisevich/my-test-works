@@ -25,7 +25,7 @@ $bg: #ededed;
         padding-bottom: 180px;
 
         .title {
-            margin-top: 25px;
+            margin-top: 14px;
             font-size: 40px;
             line-height: 1.2;
             font-weight: 900;
@@ -37,7 +37,7 @@ $bg: #ededed;
             margin-top: 50px;
 
             &__item {
-                padding: 13px 0px 11px 25px;
+                padding: 0 0 0 20px;
                 background-color: #d9d9d9;
                 border-radius: 20px;
                 margin-right: 20px;
@@ -128,7 +128,7 @@ $bg: #ededed;
                     }
                 }
 
-                &:nth-child(4n + 1){
+                &:nth-child(4n + 1) {
                     a {
                         padding-left: 0;
                         padding-right: 30px;
@@ -161,7 +161,7 @@ $bg: #ededed;
                 }
 
                 .gallery-info {
-                    margin-top: 25px;
+                    margin-top: 22px;
 
                     .adress {
                         font-size: 18px;
@@ -171,11 +171,14 @@ $bg: #ededed;
                     }
 
                     .object {
+                        margin-top: 8px;
                         font-size: 26px;
                         font-weight: 700;
                         color: #000000;
 
                         .place {
+                            margin-right: -8px;
+
                             &:after {
                                 padding-left: 8px;
                                 opacity: .4;
@@ -192,7 +195,7 @@ $bg: #ededed;
 
                     .description {
                         &-list {
-                            margin-top: 13px;
+                            margin-top: 5px;
                             list-style-type: none;
 
                             li {
@@ -205,6 +208,8 @@ $bg: #ededed;
             }
 
             .order-consultation {
+                padding: 30px 0 30px 30px;
+
                 &__content {
                     padding: 60px 35px 57px 30px;
                     background-color: #fc76b3;
@@ -244,3 +249,4 @@ $bg: #ededed;
 }
 
 @import 'media';
+@import 'media_projects';

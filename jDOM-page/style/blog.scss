@@ -114,7 +114,7 @@ $bg: #ededed;
 
     .section-content {
         .title {
-            margin-top: 25px;
+            margin-top: 14px;
             margin-bottom: 10px;
             font-size: 40px;
             line-height: 1.2;
@@ -156,7 +156,7 @@ $bg: #ededed;
                 font-weight: 700;
                 cursor: pointer;
                 transition: .2s;
-                
+
                 &:hover {
                     color: $mainColor;
                     border-color: $mainColor;
@@ -201,9 +201,19 @@ $bg: #ededed;
                 }
             }
 
+            .owl-carousel {
+                .owl-item {
+                    width: auto !important;
+
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+
             .owl-stage-outer {
                 overflow: visible;
-                
+
                 .owl-stage {
                     display: flex;
                     width: auto;
@@ -211,6 +221,32 @@ $bg: #ededed;
 
                 .owl-item {
                     margin-right: 30px;
+                }
+            }
+
+            .owl-nav {
+                margin-top: 68px;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+
+                .prev {
+                    transform: rotate(-180deg);
+                    margin-right: 40px;
+                }
+
+                .bg-arrow {
+                    position: absolute;
+                    z-index: -1;
+                    top: -25px;
+                    right: -35px;
+                }
+
+                .owl-prev,
+                .owl-next {
+                    outline: none;
+                    cursor: pointer;
+                    border: none;
                 }
             }
         }
@@ -283,12 +319,12 @@ $bg: #ededed;
                     background-color: #fff;
                     padding: 38px 17px 35px 40px;
                     max-width: 611px;
-                    
+
                     a {
                         text-decoration: none;
                         color: #000;
                         transition: .2s;
-                        
+
                         &:hover {
                             color: $mainColor;
                         }

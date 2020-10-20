@@ -33,6 +33,10 @@
         <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
             <path class="cls-1" d="M1560,2580v-8h-9v-4h9v-8l12,10Z" transform="translate(-1551 -2560)" />
         </symbol>
+        <symbol id="bg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73px" height="70px">
+            <path fill-rule="evenodd" fill="rgb(246, 203, 2)" d="M48.000,1.000 C65.046,-3.622 78.225,14.988 69.000,35.999 C61.784,52.434 42.367,69.034 22.000,63.999 C1.922,59.036 -3.760,36.965 4.697,21.133 C15.923,0.121 30.203,5.824 48.000,1.000 Z">
+            </path>
+        </symbol>
     </svg>
 
     <div id="popup" class="popup hidden">
@@ -68,17 +72,23 @@
                 </div>
                 <div class="nav-block">
                     <nav>
-                        <ul class="nav-list flex ai-c jc-c">
+                        <ul class="nav-list nav-list__desk flex ai-c jc-c">
                             <li><a href="#" class="nav-list__item">Что делаем</a></li>
                             <li><a href="#" class="nav-list__item">Готовые объекты</a></li>
                             <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
                             <li><a href="#" class="nav-list__item">Контакты</a></li>
                         </ul>
 
-                        <div class="burger-menu">
-                            <span class="burger-menu__item"></span>
-                        </div>
+                        <ul class="nav-list nav-list__mobile flex ai-c jc-c">
+                            <li><a href="#" class="nav-list__item">Что делаем</a></li>
+                            <li><a href="#" class="nav-list__item">Готовые объекты</a></li>
+                            <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
+                            <li><a href="#" class="nav-list__item">Контакты</a></li>
+                        </ul>
                     </nav>
+                    <div class="burger-menu">
+                        <span class="burger-menu__item"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,15 +158,9 @@
                             <div class="slider-block__item">
                                 <img src="img/gallery/photo_1.jpg" alt="photo">
                             </div>
-                            <div class="slider-block__item">
-                                <img src="img/gallery/photo_1.jpg" alt="photo">
-                            </div>
-                            <div class="slider-block__item">
-                                <img src="img/gallery/photo_1.jpg" alt="photo">
-                            </div>
-                            <div class="slider-block__item">
-                                <img src="img/gallery/photo_1.jpg" alt="photo">
-                            </div>
+                            <!--<div class="slider-block__item">
+                                <img src="img/gallery/photo_2.jpg" alt="photo">
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -200,7 +204,7 @@
                                 <div class="articles-block__img">
                                     <img src="img/photo-articles/photo_article_1.jpg" alt="photo">
                                 </div>
-                                <div class="articles-block__text">
+                                <div class="articles-block__text block-img">
                                     <a href="#">
                                         <h3>Ежедневные фотоотчеты прямо к вам на смартфон</h3>
                                         <p>Вы сможете отслеживать динамику ремонта без необходимости посещения объекта</p>
@@ -221,7 +225,7 @@
                                 <div class="articles-block__img">
                                     <img src="img/photo-articles/photo_article_2.jpg" alt="photo">
                                 </div>
-                                <div class="articles-block__text">
+                                <div class="articles-block__text block-img">
                                     <a href="#">
                                         <h3>Ежедневные фотоотчеты прямо к вам на смартфон</h3>
                                         <p>Вы сможете отслеживать динамику ремонта без необходимости посещения объекта</p>
@@ -282,6 +286,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer-logo">
+                <a href="pras.by/ru" class="flex ai-fl-end jc-fl-end">
+                    <svg width="74" height="17" viewBox="0 0 74 17">
+                        <use xlink:href="#pras"></use>
+                    </svg>
+                    Проект<span>компании PRAS</span>
+                </a>
             </div>
         </div>
     </footer>
