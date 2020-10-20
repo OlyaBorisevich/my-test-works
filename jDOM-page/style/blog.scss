@@ -186,6 +186,8 @@ $bg: #ededed;
             .container {
                 max-width: 948px;
                 margin: 0 auto;
+                position: relative;
+                //overflow: hidden;
             }
 
             &-block {
@@ -200,6 +202,8 @@ $bg: #ededed;
             }
 
             .owl-stage-outer {
+                overflow: visible;
+                
                 .owl-stage {
                     display: flex;
                     width: auto;
@@ -207,7 +211,6 @@ $bg: #ededed;
 
                 .owl-item {
                     margin-right: 30px;
-                    width: auto !important;
                 }
             }
         }
