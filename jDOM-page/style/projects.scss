@@ -117,41 +117,6 @@ $bg: #ededed;
                     }
                 }
 
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3),
-                &:nth-child(4) {
-                    border-top: 0;
-
-                    a {
-                        padding-top: 0;
-                    }
-                }
-
-                &:nth-child(4n + 1) {
-                    a {
-                        padding-left: 0;
-                        padding-right: 30px;
-                    }
-                }
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    a {
-                        padding-left: 30px;
-                        padding-right: 30px;
-                    }
-                }
-
-                &:nth-child(4n + 4) {
-                    border-right: 0;
-
-                    a {
-                        padding-right: 0;
-                        padding-left: 30px;
-                    }
-                }
-
                 .gallery-img {
                     img {
                         width: 100%;
