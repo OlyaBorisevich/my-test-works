@@ -28,6 +28,10 @@ body {
     display: flex;
 }
 
+.inline-fl {
+    display: inline-flex;
+}
+
 .fl-cl {
     flex-direction: column;
 }
@@ -66,4 +70,8 @@ body {
 
 .hidden {
     display: none;
+}
+
+.o-h {
+    overflow: hidden;
 }

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Blog</title>
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" data-mce-href="img/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" data-mce-href="img/favicon/apple-touch-icon-60x60.png">
@@ -78,19 +80,31 @@
                             <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
                             <li><a href="#" class="nav-list__item">Контакты</a></li>
                         </ul>
-
-                        <ul class="nav-list nav-list__mobile flex ai-c jc-c">
-                            <li><a href="#" class="nav-list__item">Что делаем</a></li>
-                            <li><a href="#" class="nav-list__item">Готовые объекты</a></li>
-                            <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
-                            <li><a href="#" class="nav-list__item">Контакты</a></li>
-                        </ul>
                     </nav>
                     <div class="burger-menu">
                         <span class="burger-menu__item"></span>
                     </div>
                 </div>
             </div>
+
+            <nav class="mobile-nav hidden">
+                <ul class="nav-list nav-list__mobile flex ai-c jc-c">
+                    <li><a href="#" class="nav-list__item">Что делаем</a></li>
+                    <li><a href="#" class="nav-list__item">Готовые объекты</a></li>
+                    <li><a href="#" class="nav-list__item">Никто кроме нас</a></li>
+                    <li><a href="#" class="nav-list__item">Контакты</a></li>
+                </ul>
+
+                <div class="contact-block">
+                    <div class="tel inline-fl fl-cl">
+                        <a href="tel:375291609142">+375 29 <span>160-91-42</span></a>
+                        <a href="tel:375291609142">+375 29 <span>160-91-42</span></a>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:info@jdom.by">info@jdom.by</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -155,6 +169,9 @@
                         <small>Так выглядит интерфейс кабинета заказчика, где можно следить за своим ремонтом.</small>
 
                         <div class="slider-block owl-carousel">
+                            <div class="slider-block__item">
+                                <img src="img/gallery/photo_1.jpg" alt="photo">
+                            </div>
                             <div class="slider-block__item">
                                 <img src="img/gallery/photo_1.jpg" alt="photo">
                             </div>
@@ -277,7 +294,7 @@
                 </div>
                 <div class="contact-block flex">
                     <div class="contact-block__contact">
-                        <div class="tel flex fl-cl">
+                        <div class="tel inline-fl fl-cl">
                             <a href="tel:375291609142">+375 29 <span>160-91-42</span></a>
                             <a href="tel:375291609142">+375 29 <span>160-91-42</span></a>
                         </div>
@@ -301,6 +318,4 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
-</html>
+</body></html>

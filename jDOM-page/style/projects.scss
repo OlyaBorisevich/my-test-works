@@ -58,18 +58,35 @@ $bg: #ededed;
 
                 button {
                     margin-right: 10px;
-                    width: 18px;
-                    height: 18px;
+                    width: 16px;
+                    height: 16px;
                     background-color: transparent;
                     border: none;
                     cursor: pointer;
+                    position: relative;
+                    
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 16px;
+                        width: 2px;
+                        display: block;
+                        left: 8px;
+                        top: 0;
+                        background-color: #000;
+                    }
+                    
+                    &::before {
+                        transform: rotate(44deg);
+                    }
+                    
+                    &::after {
+                        transform: rotate(-44deg);
+                    }
 
                     &:focus {
                         outline: none;
-                    }
-
-                    svg {
-                        fill: #fff;
                     }
                 }
             }
@@ -85,14 +102,20 @@ $bg: #ededed;
                     span {
                         color: #fff;
                     }
+                    
+                    button {
+                        &::after,
+                        &::before {
+                            background-color: #fff;
+                        }
+                    }
                 }
 
                 span {
                     color: #999;
                 }
-
-                svg {
-                    fill: #000;
+                
+                button {
                     transform: rotate(45deg);
                 }
             }
@@ -126,6 +149,7 @@ $bg: #ededed;
                 }
 
                 .gallery-info {
+                    min-height: 135px;
                     margin-top: 22px;
 
                     .adress {
@@ -198,9 +222,26 @@ $bg: #ededed;
                         font-weight: 400;
                         color: #fff;
                         cursor: pointer;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #fff;
+                            bottom: -1px;
+                            left: 0;
+                            transition: .2s;
+                        }
 
                         &:hover {
                             opacity: .6;
+
+                            &::after {
+                                width: 0;
+                            }
                         }
 
                         &:focus {
@@ -210,8 +251,65 @@ $bg: #ededed;
                 }
             }
         }
+
+        .pagination {
+            display: none;
+            margin-top: 90px;
+
+            &-list {
+                list-style-type: none;
+
+                &__item {
+                    position: relative;
+                    padding-right: 20px;
+
+                    span {
+                        font-size: 22px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #000000;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #bfbfbf;
+                    }
+
+                    .bg-arrow {
+                        position: absolute;
+                        left: 10px;
+                        z-index: -1;
+                        bottom: -22px;
+                    }
+
+                    .prev {
+                        transform: rotate(-180deg);
+                    }
+
+                    .button {
+                        cursor: pointer;
+                    }
+
+                    .disable {
+                        .prev {
+                            opacity: 0.25;
+                        }
+                    }
+                }
+                
+                .arrow-btn__prev {
+                    padding-right: 50px;
+                }
+                
+                .arrow-btn__next {
+                    padding-left: 30px;
+                }
+            }
+        }
     }
 }
 
-@import 'media';
 @import 'media_projects';
