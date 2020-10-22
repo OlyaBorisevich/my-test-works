@@ -106,15 +106,15 @@
             <section class="section-content">
                 <h1 class="title">Готовые проекты</h1>
                 <div class="tag-block flex ai-c">
-                    <div class="tag-block__item inactive-item flex ai-c jc-c" onClick="tabActive">
+                    <div class="tag-block__item inactive-item flex ai-c jc-c" data-tag="1" onClick="selectTag(event)">
                         <span>2-х комнатная квартира</span>
                         <button></button>
                     </div>
-                    <div class="tag-block__item flex ai-c jc-c" onClick="tabActive">
+                    <div class="tag-block__item flex ai-c jc-c" data-tag="2" onClick="selectTag(event)">
                         <span>3-х комнатная квартира</span>
                         <button></button>
                     </div>
-                    <div class="tag-block__item flex ai-c jc-c" onClick="tabActive">
+                    <div class="tag-block__item flex ai-c jc-c" data-tag="3" onClick="selectTag(event)">
                         <span>Квартира-студия</span>
                         <button></button>
                     </div>
@@ -155,7 +155,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="gallery-block__item flex jc-fl-end fl-cl">
+                    <div class="gallery-block__item flex jc-fl-end fl-cl" data-tag-id="2">
                         <a href="#" class="gallery-block__link">
                             <div class="gallery-img">
                                 <img src="img/photo%20project/photo_3.jpg" alt="photo">
@@ -405,4 +405,6 @@
     </footer>
 
     <script src="js/projects.js"></script>
-</body></html>
+</body>
+
+</html>

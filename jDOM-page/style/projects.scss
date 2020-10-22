@@ -49,6 +49,7 @@ $bg: #ededed;
                 }
 
                 span {
+                    pointer-events: none;
                     font-size: 18px;
                     line-height: 1.2;
                     font-weight: 400;
@@ -57,6 +58,7 @@ $bg: #ededed;
                 }
 
                 button {
+                    pointer-events: none;
                     margin-right: 10px;
                     width: 16px;
                     height: 16px;
@@ -64,7 +66,7 @@ $bg: #ededed;
                     border: none;
                     cursor: pointer;
                     position: relative;
-                    
+
                     &::before,
                     &::after {
                         content: '';
@@ -76,11 +78,11 @@ $bg: #ededed;
                         top: 0;
                         background-color: #000;
                     }
-                    
+
                     &::before {
                         transform: rotate(44deg);
                     }
-                    
+
                     &::after {
                         transform: rotate(-44deg);
                     }
@@ -102,8 +104,9 @@ $bg: #ededed;
                     span {
                         color: #fff;
                     }
-                    
+
                     button {
+
                         &::after,
                         &::before {
                             background-color: #fff;
@@ -114,7 +117,7 @@ $bg: #ededed;
                 span {
                     color: #999;
                 }
-                
+
                 button {
                     transform: rotate(45deg);
                 }
@@ -141,6 +144,8 @@ $bg: #ededed;
                 }
 
                 .gallery-img {
+                    display: flex;
+
                     img {
                         width: 100%;
                         max-width: 320px;
@@ -149,7 +154,7 @@ $bg: #ededed;
                 }
 
                 .gallery-info {
-                    min-height: 135px;
+                    min-height: 140px;
                     margin-top: 22px;
 
                     .adress {
@@ -299,11 +304,11 @@ $bg: #ededed;
                         }
                     }
                 }
-                
+
                 .arrow-btn__prev {
                     padding-right: 50px;
                 }
-                
+
                 .arrow-btn__next {
                     padding-left: 30px;
                 }
