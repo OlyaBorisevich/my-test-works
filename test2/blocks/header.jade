@@ -1,0 +1,30 @@
+header.header
+    .header-content
+        .logo
+            a(href="https://lacerta.by/" target="_blank").logo-link
+                .logo-img
+                    img(src="./img/logo.png")
+                .logo-text.
+                    Покупка и<br>
+                    продажа облигаций
+        block menu
+            .nav-menu
+                    nav
+                    ul.nav-menu-list
+                        each item1 in ['Войти в личный кабинет']
+                            li
+                                a(href="#").nav-menu-list__item= item1
+                    ul.nav-menu-list
+                        each item2 in ['Компания Lacerta', 'Вторичный рынок облигаций', 'Выпустить и разместить облигации', 'Выплаты доходов']
+                            li
+                                a(href="#").nav-menu-list__item= item2
+                    ul.nav-menu-list
+                        each item3 in ['Купить облигации', 'Продать облигации']
+                            li
+                                a(href="#").nav-menu-list__item.bold= item3
+                    ul.nav-menu-list
+                        each item4 in ['Контакты']
+                            li
+                                a(href="#").nav-menu-list__item= item4
+                                a(href="tel:375172390707").nav-menu-list__item.tel +375 17
+                                    <span>239-07-07</span>

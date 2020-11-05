@@ -1,0 +1,26 @@
+extend ./blocks/content.jade
+
+block vars
+    - let mainTitle = 'Вход'
+    - let subTitle = 'Новый пользователь?'
+    - let subLink = 'Зарегистрируйтесь'
+    - let btnText = 'Войти аккаунт'
+    
+block form
+    form.main-form
+        .input-wrapper
+            label(for="email") Email
+            input(id="email" name="Email" required="required" type="email")
+        .input-wrapper
+            label(for="password") Пароль
+            input(id="password" name="Password" required="required" type="password" value="12345")
+            button.btn-show
+                svg
+                    use(xlink:href="#eye")
+        
+        .main-form__link
+            a(href="#").link-password Забыли пароль?
+
+        button.btn.btn-form= btnText
+            svg
+                use(xlink:href="#arrow")

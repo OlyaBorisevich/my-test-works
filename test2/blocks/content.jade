@@ -1,0 +1,43 @@
+doctype
+include ./blocks/head.jade
+        link(rel="stylesheet" href="style.css")
+    body
+        block svg
+            include ./blocks/svg.jade
+        block header
+            include ./blocks/header.jade
+
+block vars
+    - let mainTitle = ''
+    - let subTitle = ''
+    - let subLink = ''
+
+block content
+    main.main
+        .container
+            .main-content
+                h1.title= mainTitle
+                .subtitle= subTitle
+                    a(href="#").subtitle-link= subLink
+
+                block form
+                    form.main-form
+                        .input-wrapper
+                            label(for="company") Название компании
+                            input(type="text" id="company")
+                        .input-wrapper
+                            label(for="tel") Номер телефона
+                            input(id="tel" name="Phone" placeholder="+ 375 00 111-22-33" type="text" required phonenumber)
+                        .input-wrapper
+                            label(for="email") Email
+                            input(id="email" name="Email" required="required" type="email")
+                        .input-wrapper
+                            label(for="name") Имя
+                            input(id="name" name="Name" required="required" type="text" value="Иван")
+                        .input-wrapper
+                            label(for="position") Должность
+                            input(id="position" name="Position" type="text")
+
+                        button.btn.btn-form= btnText
+                            svg
+                                use(xlink:href="#arrow")

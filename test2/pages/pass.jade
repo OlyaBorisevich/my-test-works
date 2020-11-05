@@ -1,0 +1,20 @@
+extend ./blocks/content.jade
+
+block vars
+    - let mainTitle = 'Забыли пароль?'
+    - let subTitle = 'Введите адрес электронной почты, который вы использовали при регистрации, и мы вышлем вам инструкции по восстановлению пароля.'
+    - let btnText = 'Войти аккаунт'
+    
+block form
+    form.main-form
+        label(for="email") Email
+        input(id="email" name="Email" required="required" type="email")
+        label(for="password") Пароль
+        input(id="password" name="Password" required="required" type="password" value="12345")
+        
+        .main-form__link
+            a(href="#").link-password Забыли пароль?
+
+        button.btn.btn-form= btnText
+            svg
+                use(xlink:href="#arrow")
