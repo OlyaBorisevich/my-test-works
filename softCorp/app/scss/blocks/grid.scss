@@ -1,0 +1,180 @@
+.grid-default {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -8rem;
+}
+
+.grid-default__cell {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.cell-1 {
+    width: 8.33333333%;
+}
+
+.cell-2 {
+    width: 16.66666667%;
+}
+
+.cell-3 {
+    width: 25%;
+}
+
+.cell-4 {
+    width: 33.33333333%;
+}
+
+.cell-5 {
+    width: 41.66666667%;
+}
+
+.cell-6 {
+    width: 50%;
+}
+
+.cell-7 {
+    width: 58.33333333%;
+}
+
+.cell-8 {
+    width: 66.66666667%;
+}
+
+.cell-9 {
+    width: 75%;
+}
+
+.cell-10 {
+    width: 83.33333333%;
+}
+
+.cell-11 {
+    width: 91.66666667%;
+}
+
+.cell-12 {
+    width: 100%;
+}
+
+@media(max-width: $table-screen) {
+    .cell-md-1 {
+        width: 8.33333333%;
+    }
+
+    .cell-md-2 {
+        width: 16.66666667%;
+    }
+
+    .cell-md-3 {
+        width: 25%;
+    }
+
+    .cell-md-4 {
+        width: 33.33333333%;
+    }
+
+    .cell-md-5 {
+        width: 41.66666667%;
+    }
+
+    .cell-md-6 {
+        width: 50%;
+    }
+
+    .cell-md-7 {
+        width: 58.33333333%;
+    }
+
+    .cell-md-8 {
+        width: 66.66666667%;
+    }
+
+    .cell-md-9 {
+        width: 75%;
+    }
+
+    .cell-md-10 {
+        width: 83.33333333%;
+    }
+
+    .cell-md-11 {
+        width: 91.66666667%;
+    }
+
+    .cell-md-12 {
+        width: 100%;
+    }
+
+    .cell-md-hide {
+        display: none;
+    }
+}
+
+@media(max-width: $mobile-screen) {
+    .grid-default {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-default__cell {
+        margin-bottom: 4rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .cell-xs-1 {
+        width: 8.33333333%;
+    }
+
+    .cell-xs-2 {
+        width: 16.66666667%;
+    }
+
+    .cell-xs-3 {
+        width: 25%;
+    }
+
+    .cell-xs-4 {
+        width: 33.33333333%;
+    }
+
+    .cell-xs-5 {
+        width: 41.66666667%;
+    }
+
+    .cell-xs-6 {
+        width: 50%;
+    }
+
+    .cell-xs-7 {
+        width: 58.33333333%;
+    }
+
+    .cell-xs-8 {
+        width: 66.66666667%;
+    }
+
+    .cell-xs-9 {
+        width: 75%;
+    }
+
+    .cell-xs-10 {
+        width: 83.33333333%;
+    }
+
+    .cell-xs-11 {
+        width: 91.66666667%;
+    }
+
+    .cell-xs-12 {
+        width: 100%;
+    }
+
+    .cell-xs-hidden {
+        display: none;
+    }
+}

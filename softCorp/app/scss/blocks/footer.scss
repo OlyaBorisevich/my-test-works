@@ -1,0 +1,146 @@
+.layout-footer {
+    padding: 3rem 0;
+    background-color: $bg-secondary;
+
+    .icon {
+        fill: $dark-default;
+        margin-right: 1rem;
+    }
+}
+
+.layout-footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -4rem;
+    flex-wrap: wrap;
+}
+
+.layout-footer__cell {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    + .layout-footer__cell {
+        position: relative;
+
+        &::before {
+            left: 0;
+            top: 50%;
+            content: '';
+            width: 1px;
+            height: 1.8rem;
+            background-color: $text-white;
+            display: block;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media(max-width: $table-screen) {
+        &:first-child {
+            order: 1;
+        }
+    }
+}
+
+.copyright {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.2;
+
+    color: $text-white;
+
+    @media(max-width: $table-screen) {
+        text-align: center;
+    }
+}
+
+.menu-footer {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    color: #C3C3C3;
+
+    @media(max-width: $mobile-screen) {
+        justify-content: center;
+    }
+}
+
+.icon-qiwi {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-yandex {
+    width: 1.5rem;
+    height: 1.8rem;
+}
+
+.icon-web {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.icon-email {
+    width: 1.6rem;
+    height: 1.3rem;
+}
+
+.icon-vkontakte {
+    width: 1.2rem;
+    height: 1.4rem;
+}
+
+.menu-footer__item {
+    color: inherit;
+    font-size: 1.3rem;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+
+    + .menu-footer__item {
+        margin-left: 3.8rem;
+    }
+
+    &::marker {
+        color: transparent;
+    }
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    color: $text-white;
+
+    @media(max-width: $mobile-screen) {
+        justify-content: center;
+    }
+}
+
+.social-list__item {
+    + .social-list__item {
+        margin-left: 3.8rem;
+    }
+
+    &::marker {
+        color: transparent;
+    }
+}
+
+.social-list__link {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: inherit;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: $text-default;
+
+        .icon {
+            fill: $text-white;
+        }
+    }
+}

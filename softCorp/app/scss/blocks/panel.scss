@@ -1,0 +1,39 @@
+.open-panel {
+    position: relative;
+
+    .layout-panel {
+        opacity: 1;
+        z-index: 100;
+        visibility: visible;
+    }
+}
+
+.layout-panel {
+    position: fixed;
+    background: rgba(16, 16, 29, 0.9);
+    left: 0;
+    top: 6.4rem;
+    height: 100%;
+    padding: 2rem 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+    width: 100%;
+
+    .nav {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        color: $text-white;
+    }
+
+    .nav-list__item {
+        + .nav-list__item {
+            margin-top: 3rem;
+        }
+    }
+}

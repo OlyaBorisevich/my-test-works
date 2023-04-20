@@ -1,0 +1,36 @@
+.section-form {
+    background-color: #272733;
+    padding-top: 9rem;
+    padding-bottom: 15rem;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../images/temp/mask.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section-form__header {
+    text-align: center;
+
+    + .section-form__body {
+        margin-top: 8rem;
+    }
+}
+
+@media(max-width: $mobile-screen) {
+    .section-form {
+        padding-top: 3rem;
+        padding-bottom: 8rem;
+    }
+}

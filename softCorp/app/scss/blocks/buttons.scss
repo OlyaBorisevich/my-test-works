@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    min-width: 18.3rem;
+
+    &.md {
+        width: 100%;
+        max-width: 37rem;
+    }
+}
+
+.btn-default {
+    background: $text-default;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $text-white;
+
+    transition: background .3s, color .3s;
+
+    &:hover {
+        background: $text-white;
+        color: $text-default;
+    }
+}
+
+.btn-secondary {
+    background: $text-white;
+    border: 1px solid #6F6D7B;
+    border-radius: 4px;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #2A2B30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color .3s, border-color .3s;
+
+    .icon {
+        fill: #272733;
+        margin-right: 1rem;
+
+        transition: fill .3s;
+    }
+
+    &:hover {
+        border-color: $text-default;
+        color: $text-default;
+
+        .icon {
+            fill: $text-default;
+        }
+    }
+}
+
+.icon-file {
+    width: 1.7rem;
+    height: 2rem;
+}

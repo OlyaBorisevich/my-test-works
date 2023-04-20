@@ -1,0 +1,12 @@
+extends ../layout/layout-default
+
+block vars
+    - var bodyClass = 'page-default';
+
+block head
+    - var pageTitle = 'LoremIpsum.Net';
+
+block content
+    main(id="main").main
+        include ../sections/main
+        include ../sections/form

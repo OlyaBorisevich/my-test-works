@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.375;
+    min-width: 320px;
+    font-family: $font-default;
+    font-weight: 400;
+    color: $text-black;
+    -webkit-font-smoothing: antialiased;
+}
+
+.visually-hidden {
+  position: absolute!important;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    overflow: hidden;
+}
+
+.layout-body {
+    position: relative;
+    z-index: 3;
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 1400px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin: 0 auto;
+    width: 100%;
+
+    z-index: 3;
+    position: relative;
+}
+
+.svg-store {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(max-width: $table-screen){
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media(max-width: $mobile-screen){
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

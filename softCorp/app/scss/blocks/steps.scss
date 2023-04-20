@@ -1,0 +1,104 @@
+.steps-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 8rem -2rem 6rem;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 4.7rem;
+        left: 8.5rem;
+        border-top: 6px dotted #C4C4C4;
+        height: 0;
+        width: calc(100% - 19rem);
+    }
+
+    @media(max-width: $table-screen) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 6rem 0 4rem;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.steps__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 2rem 2rem;
+
+    &::marker {
+        color: transparent;
+    }
+
+    + .steps__item {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+        }
+    }
+
+    @media(max-width: $table-screen) {
+        margin-bottom: 2rem;
+    }
+}
+
+.step {
+    width: 10rem;
+    height: 10rem;
+    background-color: $text-default;
+    border: 5px solid $dark-default;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        fill: $text-white;
+    }
+}
+
+.step__text {
+    max-width: 19rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $text-white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.icon-step-1 {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.icon-step-2 {
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-step-3 {
+    width: 3.8rem;
+    height: 4.1rem;
+}
+
+.icon-step-4 {
+    width: 3.8rem;
+    height: 2.8rem;
+}
+
+.icon-step-5 {
+    width: 3.8rem;
+    height: 2.8rem;
+}

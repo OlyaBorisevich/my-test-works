@@ -1,0 +1,54 @@
+section.section.section-form
+    .container
+        .section-form__inner
+            .section-form__header
+                h2.section-title.section-title_light
+                    | Оформление &nbsp;
+                    span Заказа
+                p.section-description Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            .section-form__body
+                include ../blocks/step
+                form(action="#").form-default
+                    .form-default__row
+                        .form-default__item.cell-4.cell-md-6.cell-xs-12
+                            select.js_select-default
+                                option
+                                option Sed ut perspiciatis
+                                option Nemo enim ipsam
+                                option Et harum quidem
+                                option Temporibus autem
+                                option Itaque earum rerum
+                                option Sed ut perspiciati
+                                option Nemo enim ipsa
+                                option Et harum quide
+                                option Temporibus aut
+                                option Itaque earum rer
+                                option Sed ut perspiciat
+                                option Nemo enim ips
+                                option Et harum qu
+                                option Temporibus au
+                                option Itaqu earum rerum
+                                option Sed perspiciatis
+                                option Nemo enim
+                                option Et haru quide
+                                option Temporibus
+                                option Itaque earum
+                        .form-default__item.cell-4.cell-md-6.cell-xs-12
+                            label(for="email").form-label
+                                input(name="email" id="email" placeholder="Ваш e-mail").form-control
+                        .form-default__item.cell-4.cell-md-6.cell-xs-12
+                            label(for="name").form-label
+                                input(name="name" id="name" placeholder="Ваше имя").form-control
+                    .form-default__row
+                        .form-default__item.cell-8.cell-md-12
+                            .form-default__block
+                                label(for="range").form-label Sed ut perspiciatis, unde omnis iste natus
+                                input(type="range" id="range" name="range" min="0" max="100" data-value="").form-range.js_range
+                        .form-default__item.cell-4.cell-md-12
+                            button(type="button").btn.btn-secondary.md
+                                svg.icon.icon-file
+                                    use(xlink:href="#icon-file")
+                                | Прикрепить файл
+                    .form-default__row.center
+                        button(type="submit").btn.btn-default.md
+                            | Отправить
