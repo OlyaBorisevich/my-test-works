@@ -8,7 +8,12 @@ function showValueRange() {
 
     ranges.forEach(function(range) {
         let value = range.value,
-            dataValue = range.setAttribute('data-value', value + '%');
+            rangeID = range.getAttribute('id'),
+            labelTextRange = document.querySelector('[for="' + rangeID + '"]').querySelector('.range-value');
+
+        if (!labelTextRange) return;
+
+        labelTextRange.innerHTML = value + '%';
     });
 }
 
